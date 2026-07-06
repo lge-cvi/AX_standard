@@ -566,29 +566,29 @@
             <!-- PART 3 -->
             <div class="part-group">
                 <button class="part-header collapsed" id="btn-part3" onclick="togglePart('part3')">
-                    <span>PART 3. 대시보드·발표자료</span>
+                    <span>PART 3. AI 에이전트 만들기</span>
                     <i class="fas fa-chevron-down text-xs"></i>
                 </button>
                 <div class="part-content collapsed" id="part3">
-                    <a href="#mvp-concept" class="curriculum-item block">3-1. MVP 제품 개념</a>
-                    <a href="#mvp-dashboard" class="curriculum-item block">3-2. 대시보드 MVP 제작</a>
-                    <a href="#mvp-ppt" class="curriculum-item block">3-3. HTML 발표자료 제작</a>
-                    <a href="#mvp-deploy" class="curriculum-item block">3-4. HTML 배포의 의미 & 방법</a>
-                    <a href="#copilot-ppt" class="curriculum-item block">3-5. Outlook Copilot(Claude)으로 PPT 만들기</a>
-                    <a href="#lg-template" class="curriculum-item block">3-6. LG스타일 프롬프트 템플릿</a>
+                    <a href="#cowork-intro" class="curriculum-item block">3-1. MS Cowork 소개</a>
+                    <a href="#agent-build" class="curriculum-item block">3-2. 나만의 에이전트 만들기</a>
+                    <a href="#agent-deploy" class="curriculum-item block">3-3. 에이전트 배포하기</a>
                 </div>
             </div>
 
             <!-- PART 4 -->
             <div class="part-group">
                 <button class="part-header collapsed" id="btn-part4" onclick="togglePart('part4')">
-                    <span>PART 4. AI 에이전트 만들기</span>
+                    <span>PART 4. 대시보드·발표자료</span>
                     <i class="fas fa-chevron-down text-xs"></i>
                 </button>
                 <div class="part-content collapsed" id="part4">
-                    <a href="#cowork-intro" class="curriculum-item block">4-1. MS Cowork 소개</a>
-                    <a href="#agent-build" class="curriculum-item block">4-2. 나만의 에이전트 만들기</a>
-                    <a href="#agent-deploy" class="curriculum-item block">4-3. 에이전트 배포하기</a>
+                    <a href="#mvp-concept" class="curriculum-item block">4-1. MVP 제품 개념</a>
+                    <a href="#mvp-dashboard" class="curriculum-item block">4-2. 대시보드 MVP 제작</a>
+                    <a href="#mvp-ppt" class="curriculum-item block">4-3. HTML 발표자료 제작</a>
+                    <a href="#mvp-deploy" class="curriculum-item block">4-4. HTML 배포의 의미 & 방법</a>
+                    <a href="#copilot-ppt" class="curriculum-item block">4-5. Outlook Copilot(Claude)으로 PPT 만들기</a>
+                    <a href="#lg-template" class="curriculum-item block">4-6. LG스타일 프롬프트 템플릿</a>
                 </div>
             </div>
 
@@ -627,8 +627,8 @@
                 <div class="hero-fade flex flex-wrap gap-2.5 mt-8" style="animation-delay:.45s">
                     <a href="#intro" class="hero-chip"><i class="fas fa-1"></i> 기본기 · 프롬프트 · 보안</a>
                     <a href="#copilot-email" class="hero-chip"><i class="fas fa-2"></i> Copilot 실무 활용</a>
-                    <a href="#mvp-concept" class="hero-chip"><i class="fas fa-3"></i> 대시보드 · 발표자료</a>
-                    <a href="#cowork-intro" class="hero-chip"><i class="fas fa-4"></i> AI 에이전트 만들기</a>
+                    <a href="#cowork-intro" class="hero-chip"><i class="fas fa-3"></i> AI 에이전트 만들기</a>
+                    <a href="#mvp-concept" class="hero-chip"><i class="fas fa-4"></i> 대시보드 · 발표자료</a>
                     <a href="#group-lab" class="hero-chip"><i class="fas fa-5"></i> 조별 실습 과제</a>
                 </div>
 
@@ -711,7 +711,7 @@
                         <p class="text-xs text-gray-400 mt-0.5">40분</p>
                     </div>
                     <div class="flex-1 p-4">
-                        <span class="px-2 py-0.5 bg-red-100 text-[#C10933] rounded text-xs font-bold">PART 4 · AI 에이전트</span>
+                        <span class="px-2 py-0.5 bg-red-100 text-[#C10933] rounded text-xs font-bold">PART 3 · AI 에이전트</span>
                         <p class="font-bold text-gray-800 mt-2 mb-1.5">나만의·우리 팀의 AI 만들기</p>
                         <div class="flex flex-wrap gap-1.5 text-xs text-gray-500">
                             <span class="px-2 py-0.5 bg-gray-100 rounded">MS Cowork·워크플로우</span>
@@ -730,7 +730,7 @@
                         <p class="text-xs text-gray-400 mt-0.5">75분</p>
                     </div>
                     <div class="flex-1 p-4">
-                        <span class="px-2 py-0.5 bg-red-100 text-[#C10933] rounded text-xs font-bold">PART 3 · 대시보드·발표자료</span>
+                        <span class="px-2 py-0.5 bg-red-100 text-[#C10933] rounded text-xs font-bold">PART 4 · 대시보드·발표자료</span>
                         <p class="font-bold text-gray-800 mt-2 mb-1.5">코딩 없이 보여주는 결과물 만들기</p>
                         <div class="flex flex-wrap gap-1.5 text-xs text-gray-500">
                             <span class="px-2 py-0.5 bg-gray-100 rounded">MVP 개념</span>
@@ -2336,587 +2336,10 @@
             </div>
         </section>
 
-        <section id="mvp-concept" class="content-section">
-            <h2 class="section-header">3-1. 즉시 실행하는 MVP 개념</h2>
-            <p class="text-lg mb-8"><strong>MVP (Minimum Viable Product, 최소 기능 제품)</strong>는 회의실에서 말로만 요구사항을 전달하는 한계를 극복하기
-                위해, AI를 통해 <strong>실제 브라우저에서 동작하는 인터랙티브 샘플</strong>을 즉시 생성하여 협업하는 방식입니다.</p>
 
-            <div class="grid md:grid-cols-2 gap-8 mb-10">
-                <div class="p-6 bg-white border-2 border-dashed border-red-200 rounded-xl">
-                    <h3 class="font-bold text-red-700 mb-3"><i class="fas fa-times-circle mr-2"></i>전통적인 방식 (동상이몽)</h3>
-                    <ul class="text-sm space-y-3 text-gray-600">
-                        <li>- 텍스트 기획서만 보고 개발/디자인 진행</li>
-                        <li>- 결과물이 완성된 후 생각했던 것과 달라 전면 수정 반복</li>
-                        <li>- 소통 오류 및 프로젝트 일정 지연 발생</li>
-                    </ul>
-                </div>
-                <div class="p-6 bg-red-50 border-2 border-red-600 rounded-xl">
-                    <h3 class="font-bold text-red-700 mb-3"><i class="fas fa-check-circle mr-2"></i>MVP 제품 개발 (시각적 협업)
-                    </h3>
-                    <ul class="text-sm space-y-3 text-gray-700">
-                        <li>- 아웃룩 Copilot(Claude)을 활용해 <strong>5분 만에 실제 작동 HTML 생성</strong></li>
-                        <li>- 화면 설계와 동적 인터랙션을 회의 중 실시간 눈으로 확인</li>
-                        <li>- 개발팀에 <strong>"이 샘플 코드 그대로 구축해주세요"</strong>라고 명확한 의사전달</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="info-box">
-                <h4 class="font-bold mb-3"><i class="fas fa-sitemap text-red-600 mr-2"></i>MVP 활용 가능한 업무 영역</h4>
-                <div class="grid md:grid-cols-3 gap-4 text-sm mt-4">
-                    <div class="p-4 bg-white border rounded-lg text-center">
-                        <div class="text-3xl mb-2">📊</div>
-                        <p class="font-bold text-gray-800">CS 대시보드</p>
-                        <p class="text-xs text-gray-500 mt-1">VOC·NPS 데이터를 실시간 시각화하는 웹 대시보드 시안</p>
-                    </div>
-                    <div class="p-4 bg-white border rounded-lg text-center">
-                        <div class="text-3xl mb-2">🎯</div>
-                        <p class="font-bold text-gray-800">보고용 슬라이드</p>
-                        <p class="text-xs text-gray-500 mt-1">키보드로 넘기는 인터랙티브 HTML 발표자료</p>
-                    </div>
-                    <div class="p-4 bg-white border rounded-lg text-center">
-                        <div class="text-3xl mb-2">🔧</div>
-                        <p class="font-bold text-gray-800">업무 도구 시안</p>
-                        <p class="text-xs text-gray-500 mt-1">신규 시스템·서비스 기획 단계의 UI MVP 시제품</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="mvp-dashboard" class="content-section">
-            <h2 class="section-header">3-2. 대시보드 MVP 제작</h2>
-            <p class="mb-6">코딩 지식 없이도 <strong>아웃룩 Copilot(Claude 모델)</strong>으로 실제 브라우저에서 작동하는 대시보드를 즉시 만들고 회의에서 시연할 수
-                있습니다.</p>
-
-            <div class="p-6 bg-gray-50 rounded-lg mb-8">
-                <h4 class="font-bold text-lg text-red-700 mb-3"><i class="fas fa-cogs mr-2"></i>대시보드 MVP 제작 4단계</h4>
-                <ol class="list-decimal pl-6 space-y-3 text-sm text-gray-700">
-                    <li><strong>아웃룩 앱 실행:</strong> 아웃룩을 열고 <strong>좌측 사이드바의 Copilot 버튼</strong>을 클릭합니다.</li>
-                    <li><strong>Claude 모델 선택:</strong> 코파일럿 창 좌측 상단의 <strong>'자동' 버튼</strong>을 클릭하여
-                        <strong>Claude(클로드)</strong>로 변경합니다.
-                        <span class="text-xs text-red-500 font-semibold">(※ 사내 라이선스/M365 버전에 따라 해당 버튼 및 모델 선택 화면이 지원되지
-                            않거나 다를 수 있습니다.)</span>
-                    </li>
-                    <li><strong>파일 첨부 및 프롬프트 전송:</strong> 코파일럿 창 하단의 <strong>📎 클립(첨부) 버튼</strong>을 클릭하여 실습용 대용량 파일인 <strong>`주차별_CS_NPS_시각화.csv`</strong>를 업로드하고 아래 프롬프트를 전송합니다.</li>
-                    <li><strong>HTML 저장 & 시연:</strong> 생성된 코드를 복사 → 메모장에 붙여넣기 → <strong>파일명.html</strong>로 저장 → 더블클릭하여
-                        브라우저에서 바로 시연합니다.</li>
-                </ol>
-            </div>
-
-            <h3 class="font-bold text-xl mb-4"><i class="fas fa-chart-bar mr-2 text-red-600"></i>시나리오: CS 현황 대시보드 즉석 제작</h3>
-            <div class="prompt-box">
-                <span class="prompt-label">BEST PROMPT</span>
-                "첨부된 `주차별_CS_NPS_시각화.csv` 파일은 주차별/제품별 고객 만족도 및 수리 완료 상태 로우 데이터야. 이 데이터를 기반으로 브라우저에서 바로 실행되는 대화형 HTML/JS 대시보드를 만들어 줘.
-
-                ■ 데이터 요약 및 시각화 요건:
-                1. 상단: KPI 카드 4개 — 총 접수건수(전체 행 개수), 완료건수('진행상태'가 '완료'인 행의 개수), 평균 처리일수('소요시간(일)'의 평균), 평균 NPS 만족도 점수('NPS 점수(0-10)'의 평균)
-                2. 중앙: 제품 카테고리별 평균 NPS 점수 막대 차트 (가장 낮은 제품은 빨간색으로 시각적 강조)
-                3. 하단: 주차별(19주차~25주차) 접수건수 추이를 보여주는 꺾은선 그래프
-
-                ■ 디자인 및 라이브러리:
-                - Tailwind CSS와 Chart.js를 CDN으로 불러와서 사용해 줘.
-                - 배경: 깔끔한 흰색/회색(#F3F4F6) 톤, 포인트 컬러: LG 레드(#C10933)
-                - 반응형 레이아웃, 카드 컴포넌트에 그림자(shadow-sm) 적용
-                - 마우스 오버 시 차트에 상세 수치가 툴팁으로 표시되도록 설정
-
-                ■ 결과물:
-                - `<!DOCTYPE html>`로 시작해서 `</html>`로 끝나는 단일 HTML 전체 코드를 출력해 줘. CSS와 JS는 모두 내장해 줘."
-            </div>
-
-            <h3 class="font-bold text-xl mb-4 mt-10"><i class="fas fa-play-circle mr-2 text-green-600"></i>시연 가이드: 회의에서
-                MVP 보여주기</h3>
-            <div class="grid md:grid-cols-2 gap-6 text-sm">
-                <div class="p-5 border rounded-lg bg-white">
-                    <h4 class="font-bold mb-3"><i class="fas fa-file-code mr-2 text-red-700"></i>방법 A: 로컬 파일 공유 (가장 빠름)
-                    </h4>
-                    <p class="text-xs text-gray-500 mb-3">사내 메신저나 메일로 즉시 공유하는 방법</p>
-                    <ol class="space-y-2 text-gray-600 text-xs">
-                        <li>1. Copilot이 생성한 코드 전체를 <strong>복사(Ctrl+A → Ctrl+C)</strong></li>
-                        <li>2. 메모장을 열고 붙여넣기 후 <strong>파일명.html</strong>로 저장</li>
-                        <li>3. 파일을 더블클릭하면 브라우저에서 즉시 실행 — <strong>회의 중 시연 가능</strong></li>
-                        <li>4. 팀즈 채팅이나 메일에 html 파일 첨부 공유</li>
-                    </ol>
-                </div>
-                <div class="p-5 border rounded-lg bg-red-50 border-red-200">
-                    <h4 class="font-bold mb-3"><i class="fas fa-wand-magic-sparkles mr-2 text-red-700"></i>MVP 시연의 핵심 가치
-                    </h4>
-                    <ul class="space-y-2 text-gray-700 text-xs">
-                        <li>✓ 기획 단계에서 <strong>"이렇게 보여주면 어떨까요?"</strong> 즉석 확인</li>
-                        <li>✓ 회의 참석자 모두가 같은 화면을 보며 피드백 제공 가능</li>
-                        <li>✓ <strong>"조금 바꿔줘"</strong>를 Copilot에 요청하면 실시간 수정도 가능</li>
-                        <li>✓ 개발팀에 명확한 기준 화면 전달 → 커뮤니케이션 비용 대폭 절감</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="mvp-ppt" class="content-section">
-            <h2 class="section-header">3-3. HTML 발표자료 제작</h2>
-            <p class="mb-6">전통적인 PPT 대신, 웹 브라우저에서 실행되고 키보드 방향키로 슬라이드가 넘어가는 <strong>인터랙티브 웹 슬라이드</strong>를 만듭니다.
-                Copilot이 제공하는 CSS 애니메이션과 깔끔한 구조를 통해 템플릿보다 세련된 보고서를 즉시 완성할 수 있습니다.</p>
-
-            <div class="prompt-box">
-                <span class="prompt-label">COPY & USE</span>
-                "아래 보고서 내용을 바탕으로 브라우저에서 실행되는 HTML 발표자료(웹 슬라이드)를 제작해 줘.
-
-                - 슬라이드 분량: 5~8장 내외
-                - 키보드 좌우 화살표로 이전/다음 슬라이드로 넘어가는 스크립트 포함
-                - 각 슬라이드는 제목과 본문(다단 구조)으로 깔끔하게 구성
-                - 디자인: 흰색 배경, 포인트 컬러 #C10933
-
-                [보고 내용]
-                (여기에 보고할 텍스트 내용을 붙여넣으세요)"
-            </div>
-
-            <div class="mt-6 p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                <h4 class="font-bold text-blue-900 mb-3"><i class="fas fa-lightbulb mr-2 text-blue-500"></i>HTML 슬라이드 vs
-                    일반 PPT 비교</h4>
-                <table class="table-custom text-sm">
-                    <thead>
-                        <tr>
-                            <th>항목</th>
-                            <th>HTML 슬라이드 (MVP)</th>
-                            <th>PowerPoint</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>제작 시간</td>
-                            <td class="text-green-700 font-bold">5~10분 (Copilot)</td>
-                            <td class="text-gray-500">1~2시간</td>
-                        </tr>
-                        <tr>
-                            <td>인터랙션</td>
-                            <td class="text-green-700 font-bold">차트 클릭, 애니메이션</td>
-                            <td class="text-gray-500">제한적</td>
-                        </tr>
-                        <tr>
-                            <td>공유 방법</td>
-                            <td class="text-green-700 font-bold">html 파일 or 링크</td>
-                            <td class="text-gray-500">pptx 파일</td>
-                        </tr>
-                        <tr>
-                            <td>수정 방법</td>
-                            <td class="text-green-700 font-bold">Copilot에 추가 요청</td>
-                            <td class="text-gray-500">수동 편집</td>
-                        </tr>
-                        <tr>
-                            <td>적합 용도</td>
-                            <td>MVP 시안, 현황 공유</td>
-                            <td>최종 공식 보고서</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- 3-4. HTML 배포의 의미 & 방법 -->
-        <section id="mvp-deploy" class="content-section">
-            <h2 class="section-header">3-4. HTML 배포의 의미 & 방법</h2>
-
-            <!-- 배포의 의미 설명 박스 -->
-            <div class="p-6 bg-red-50 border border-red-200 rounded-xl mb-6">
-                <h4 class="font-bold text-red-900 mb-2"><i class="fas fa-network-wired mr-2 text-red-700"></i>HTML
-                    배포(Deploy)란 무엇이며 왜 필요할까요?</h4>
-                <p class="text-sm text-gray-700 leading-relaxed mb-3">
-                    <strong>배포(Deployment)</strong>란 로컬 PC에서 혼자 보던 HTML 문서나 애플리케이션 코드를 다른 사람들도 접속해서 사용할 수 있도록
-                    <strong>웹상에 띄우고 접근 권한을 부여하는 과정</strong>을 의미합니다.
-                </p>
-                <ul class="text-xs text-gray-600 space-y-2 pl-4 list-disc">
-                    <li><strong>정적 자산 시각화:</strong> HTML/CSS로 구성된 대시보드나 발표 자료는 실행 가능한 서버나 경로가 있어야 동적 데이터나 클릭 이벤트가 브라우저에서
-                        정상 작동합니다.</li>
-                    <li><strong>동상이몽 해결:</strong> URL 링크 하나 혹은 공유 서버 경로를 통해 팀원이나 경영진이 동일한 결과물을 실시간으로 보며 즉각적으로 소통할 수 있게
-                        합니다.</li>
-                    <li><strong>사내 환경의 대안:</strong> 별도의 상용 호스팅이나 복잡한 사내 서버 인프라를 승인받지 않더라도, 간단한 임시/대안 배포 방식을 통해 MVP(최소 기능
-                        제품) 수준의 기획 검증을 현업에서 즉각 진행할 수 있습니다.</li>
-                </ul>
-            </div>
-
-            <p class="mb-8 text-sm text-gray-600">Copilot으로 만든 대시보드나 발표자료(HTML)를 팀원, 경영진, 외부 파트너에게 공유하는 <strong>3가지 실전
-                    배포 방법</strong>을 안내합니다. <span class="text-gray-500">B·C 방법은 처음이면 낯설 수 있으니, 카드의 <strong>'자세히 보기'</strong> 버튼을 눌러 화면을 보며 그대로 따라 해 보세요.</span></p>
-
-            <div class="grid md:grid-cols-3 gap-6 mb-10">
-                <!-- 방법 A -->
-                <div class="p-6 border-2 border-red-200 rounded-xl bg-white">
-                    <div class="text-center mb-4">
-                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-2"><i
-                                class="fas fa-file-code text-red-700 text-xl"></i></div>
-                        <h3 class="font-bold text-lg text-gray-800">방법 A: HTML 파일 직접 전송</h3>
-                        <p class="text-xs text-green-600 font-bold mt-1">⚡ 가장 빠름 (30초)</p>
-                    </div>
-                    <ol class="text-sm space-y-2 text-gray-600">
-                        <li>1. Copilot이 생성한 코드 전체를 <strong>복사</strong></li>
-                        <li>2. 메모장을 열고 붙여넣기</li>
-                        <li>3. <strong>파일명.html</strong>로 저장</li>
-                        <li>4. 팀즈 채팅·메일에 파일 첨부 공유</li>
-                        <li>5. 받은 사람은 더블클릭으로 바로 실행</li>
-                    </ol>
-                    <div class="mt-3 p-2 bg-yellow-50 rounded text-xs text-yellow-800">
-                        <i class="fas fa-circle-info mr-1"></i>가장 간편하지만, 파일을 받아야만 볼 수 있는 제한이 있습니다.
-                    </div>
-                </div>
-
-                <!-- 방법 B -->
-                <div class="p-6 border-2 border-blue-200 rounded-xl bg-white">
-                    <div class="text-center mb-4">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2"><i
-                                class="fab fa-github text-gray-800 text-xl"></i></div>
-                        <h3 class="font-bold text-lg text-gray-800">방법 B: GitHub Pages 배포</h3>
-                        <p class="text-xs text-blue-600 font-bold mt-1">🔗 URL 링크로 공유</p>
-                    </div>
-                    <ol class="text-sm space-y-2 text-gray-600">
-                        <li>1. <a href="https://github.com" target="_blank"
-                                class="text-blue-600 underline">github.com</a> 회원가입 후 <strong>Public Repository</strong>
-                            생성</li>
-                        <li>2. 저장소에 <strong>index.html</strong> 파일 업로드</li>
-                        <li>3. Settings > Pages > Branch: main 선택 후 Save</li>
-                        <li>4. 생성된 <strong>https://username.github.io/repo/</strong> 링크로 공유</li>
-                    </ol>
-                    <button onclick="document.getElementById('modal-deploy-b').classList.remove('hidden')" class="btn-hover-effect mt-3 w-full flex items-center justify-center gap-1.5 px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-bold transition-colors cursor-pointer">
-                        <i class="fas fa-list-ol"></i> 자세히 보기 (화면 따라하기)
-                    </button>
-                    <div class="mt-3 p-2 bg-blue-50 rounded text-xs text-blue-800">
-                        <i class="fas fa-circle-info mr-1"></i>인터넷만 되면 누구나 접근 가능. 모바일에서도 열람 가능합니다.
-                    </div>
-                    <div class="mt-2 p-2 bg-red-50 border border-red-200 rounded text-xs text-red-800 font-bold">
-                        <i class="fas fa-exclamation-triangle mr-1"></i> [보안 경고] 사내 데이터(VOC, NPS, 미공개 실적 등)가 포함된 문서는 외부
-                        공개되는 GitHub Pages 배포가 절대 금지됩니다! 보안이 필요 없는 가짜(더미) 샘플 데이터의 UI 시안 배포용으로만 사용하시기 바랍니다.
-                    </div>
-                </div>
-
-                <!-- 방법 C (파이썬 제거 → 설치 불필요 방식) -->
-                <div class="p-6 border-2 border-purple-200 rounded-xl bg-white">
-                    <div class="text-center mb-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                            <i class="fas fa-desktop text-purple-700 text-xl"></i>
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-800">방법 C: 내 PC에서 바로 열어 시연</h3>
-                        <p class="text-xs text-purple-600 font-bold mt-1">🖥️ 설치 불필요 · 사내 시연 최적</p>
-                    </div>
-                    <ol class="text-sm space-y-2 text-gray-600">
-                        <li>1. HTML 파일을 <strong>바탕화면</strong>에 저장</li>
-                        <li>2. 파일을 <strong>더블클릭</strong> → 브라우저에서 바로 열림</li>
-                        <li>3. <kbd class="bg-gray-100 border px-1 py-0.5 rounded text-xs font-mono">F11</kbd> 키로 <strong>전체화면</strong> 전환</li>
-                        <li>4. 빔프로젝터 연결 또는 <strong>팀즈 화면 공유</strong>로 시연</li>
-                        <li>5. 수정 후에는 <kbd class="bg-gray-100 border px-1 py-0.5 rounded text-xs font-mono">F5</kbd>로 새로고침</li>
-                    </ol>
-                    <button onclick="document.getElementById('modal-deploy-c').classList.remove('hidden')" class="btn-hover-effect mt-3 w-full flex items-center justify-center gap-1.5 px-3 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-colors cursor-pointer">
-                        <i class="fas fa-list-ol"></i> 자세히 보기 (화면 따라하기)
-                    </button>
-                    <div class="mt-3 p-2 bg-purple-50 rounded text-xs text-purple-800">
-                        <i class="fas fa-circle-info mr-1"></i>파이썬 등 <strong>별도 프로그램 설치가 전혀 필요 없습니다.</strong> 필요한 라이브러리는 코드 안에서 인터넷(CDN)으로 자동으로 불러오므로, 인터넷만 되면 파일을 더블클릭하는 것만으로 그대로 동작합니다.
-                    </div>
-                </div>
-            </div>
-
-            <!-- 방법 B 상세 팝업 모달 -->
-            <div id="modal-deploy-b" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(0,0,0,0.45);" onclick="if(event.target===this)this.classList.add('hidden')">
-                <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] overflow-y-auto">
-                    <div class="bg-blue-600 px-5 py-3 flex items-center justify-between sticky top-0">
-                        <p class="font-bold text-white text-sm"><i class="fab fa-github mr-2"></i>방법 B: GitHub Pages 배포 — 처음부터 따라하기</p>
-                        <button onclick="document.getElementById('modal-deploy-b').classList.add('hidden')" class="text-white hover:text-blue-100 text-xl leading-none">&times;</button>
-                    </div>
-                    <div class="px-5 py-4 text-sm text-gray-700 space-y-4">
-                        <p class="text-xs text-gray-500">GitHub는 무료로 웹페이지를 인터넷에 올릴 수 있는 서비스입니다. 아래 순서대로 한 번만 따라 하면 <strong>누구나 접속할 수 있는 링크(URL)</strong>가 만들어집니다.</p>
-                        <ol class="space-y-3">
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">1</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">GitHub 회원가입</p>
-                                    <p class="text-xs text-gray-600 mt-0.5"><a href="https://github.com" target="_blank" class="text-blue-600 underline">github.com</a>에 접속해 이메일로 무료 계정을 만듭니다. (이미 있으면 로그인)</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">2</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">새 저장소(Repository) 만들기</p>
-                                    <p class="text-xs text-gray-600 mt-0.5">우측 상단 <strong>+</strong> → <strong>New repository</strong> 클릭. 이름을 정하고 <strong>공개(Public)</strong>를 선택한 뒤 <strong>Create repository</strong>를 누릅니다.</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">3</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">HTML 파일 업로드</p>
-                                    <p class="text-xs text-gray-600 mt-0.5">저장소 화면에서 <strong>Add file → Upload files</strong>를 클릭하고, 내 HTML 파일을 올립니다. 이때 파일 이름은 반드시 <code class="bg-gray-100 px-1 rounded">index.html</code>로 합니다. 올린 뒤 <strong>Commit changes</strong>를 누릅니다.</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">4</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">Pages 기능 켜기</p>
-                                    <p class="text-xs text-gray-600 mt-0.5">상단 <strong>Settings</strong> → 좌측 <strong>Pages</strong> → Branch를 <strong>main</strong>으로 선택하고 <strong>Save</strong>를 누릅니다.</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">5</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">링크 확인 & 공유</p>
-                                    <p class="text-xs text-gray-600 mt-0.5">잠시 기다리면(1~2분) <code class="bg-gray-100 px-1 rounded">https://아이디.github.io/저장소이름/</code> 형태의 주소가 생깁니다. 이 링크를 복사해 공유하면 누구나 접속할 수 있습니다.</p>
-                                </div>
-                            </li>
-                        </ol>
-                        <div class="p-3 bg-red-50 border border-red-200 rounded-lg text-xs text-red-800 font-bold">
-                            <i class="fas fa-exclamation-triangle mr-1"></i> 사내 데이터(VOC, NPS, 미공개 실적 등)가 담긴 문서는 절대 올리지 마세요. 인터넷에 공개되므로 <strong>더미(가짜) 샘플 데이터</strong>로 만든 UI 시안만 올립니다.
-                        </div>
-                        <button onclick="document.getElementById('modal-deploy-b').classList.add('hidden')" class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-sm transition-colors">확인</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 방법 C 상세 팝업 모달 -->
-            <div id="modal-deploy-c" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(0,0,0,0.45);" onclick="if(event.target===this)this.classList.add('hidden')">
-                <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] overflow-y-auto">
-                    <div class="px-5 py-3 flex items-center justify-between sticky top-0" style="background:var(--copilot-purple);">
-                        <p class="font-bold text-white text-sm"><i class="fas fa-desktop mr-2"></i>방법 C: 내 PC에서 바로 열어 시연 — 처음부터 따라하기</p>
-                        <button onclick="document.getElementById('modal-deploy-c').classList.add('hidden')" class="text-white hover:text-purple-100 text-xl leading-none">&times;</button>
-                    </div>
-                    <div class="px-5 py-4 text-sm text-gray-700 space-y-4">
-                        <p class="text-xs text-gray-500"><strong>파이썬이나 별도 서버 프로그램이 전혀 필요 없습니다.</strong> HTML 파일 하나만 있으면 더블클릭으로 바로 열려 회의·발표에 그대로 쓸 수 있습니다. 아래 순서를 따라 해 보세요.</p>
-                        <ol class="space-y-3">
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--copilot-purple);">1</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">코드 복사</p>
-                                    <p class="text-xs text-gray-600 mt-0.5">Copilot이 만들어 준 HTML 코드 전체를 <strong>복사(Ctrl+A → Ctrl+C)</strong>합니다.</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--copilot-purple);">2</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">메모장에 붙여넣기</p>
-                                    <p class="text-xs text-gray-600 mt-0.5">윈도우 <strong>메모장</strong>을 열고 붙여넣기(Ctrl+V)합니다.</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--copilot-purple);">3</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">.html 확장자로 저장 (가장 중요)</p>
-                                    <p class="text-xs text-gray-600 mt-0.5">메모장에서 <strong>파일 → 다른 이름으로 저장</strong>. 저장 창 하단의 <strong>'파일 형식'</strong>을 <strong>'모든 파일(*.*)'</strong>로 바꾼 뒤, 파일 이름을 <code class="bg-gray-100 px-1 rounded">report.html</code>처럼 <strong>반드시 .html로 끝나게</strong> 적고 저장합니다. <span class="text-red-600 font-semibold">('텍스트 문서'로 저장하면 .txt가 붙어 열리지 않으니 주의!)</span></p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--copilot-purple);">4</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">더블클릭해서 열기</p>
-                                    <p class="text-xs text-gray-600 mt-0.5">저장한 파일을 <strong>더블클릭</strong>하면 크롬·엣지 등 기본 브라우저에서 바로 열립니다. (별도 설치·서버 실행 없음)</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--copilot-purple);">5</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">전체화면으로 시연</p>
-                                    <p class="text-xs text-gray-600 mt-0.5"><kbd class="bg-gray-100 border px-1 rounded font-mono">F11</kbd> 키를 누르면 <strong>전체화면</strong>이 됩니다. 빔프로젝터를 연결하거나 <strong>팀즈 '화면 공유'</strong>로 참석자에게 보여 줍니다. (F11 다시 누르면 원래대로)</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--copilot-purple);">6</span>
-                                <div>
-                                    <p class="font-bold text-gray-800">수정 후 새로고침</p>
-                                    <p class="text-xs text-gray-600 mt-0.5">Copilot에 수정을 요청해 새 코드를 받으면, 3번처럼 다시 저장한 뒤 브라우저에서 <kbd class="bg-gray-100 border px-1 rounded font-mono">F5</kbd>(새로고침)만 누르면 바뀐 내용이 바로 반영됩니다.</p>
-                                </div>
-                            </li>
-                        </ol>
-                        <div class="p-3 bg-purple-50 border border-purple-200 rounded-lg text-xs text-gray-700">
-                            <i class="fas fa-lightbulb mr-1" style="color:var(--copilot-purple);"></i> 인터넷 연결만 되어 있으면 차트·디자인 라이브러리가 코드 안에서 자동으로 불러와지므로, 이 방식만으로도 완성된 화면이 그대로 보입니다.
-                        </div>
-                        <button onclick="document.getElementById('modal-deploy-c').classList.add('hidden')" class="w-full py-2 text-white font-bold rounded-lg text-sm transition-colors" style="background:var(--copilot-purple);">확인</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-box">
-                <h4 class="font-bold mb-2"><i class="fas fa-lightbulb text-red-600 mr-2"></i>어떤 방법을 선택해야 할까?</h4>
-                <table class="table-custom text-sm">
-                    <thead>
-                        <tr>
-                            <th>상황</th>
-                            <th>추천 방법</th>
-                            <th>이유</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>팀즈·메일로 빠르게 공유</td>
-                            <td class="font-bold text-red-700">A. 파일 전송</td>
-                            <td>30초 만에 완료</td>
-                        </tr>
-                        <tr>
-                            <td>외부·모바일 공유 필요</td>
-                            <td class="font-bold text-blue-600">B. GitHub Pages</td>
-                            <td>URL 하나로 어디서든 접근</td>
-                        </tr>
-                        <tr>
-                            <td>회의실에서 실시간 시연</td>
-                            <td class="font-bold text-purple-700">C. 내 PC에서 바로 열기</td>
-                            <td>인터넷·설치 없이 즉시 시연</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- 3-5. Outlook Copilot으로 PPT 만들기 -->
-        <section id="copilot-ppt" class="content-section">
-            <h2 class="section-header">3-5. Outlook Copilot(Claude)으로 PPT 만들기</h2>
-
-            <div class="info-box">
-                <p><strong>아웃룩 Copilot</strong>에서는 다른 코파일럿과 달리 <strong>AI 모델을 Claude(클로드)로 변경</strong>할 수 있습니다.
-                    Claude 모델은 문서 구조화와 자연스러운 문장 생성에 특히 뛰어나, <strong>PowerPoint 발표자료 초안 제작</strong>에 최적화되어 있습니다.</p>
-            </div>
-
-            <div class="p-6 bg-amber-50 border border-amber-300 rounded-xl mb-8">
-                <h4 class="font-bold text-amber-900 mb-3"><i class="fas fa-star mr-2 text-amber-500"></i>아웃룩 Copilot +
-                    Claude 모델 선택법</h4>
-                <div class="grid md:grid-cols-3 gap-4 text-sm">
-                    <div class="bg-white rounded-lg p-4 border border-amber-200">
-                        <div
-                            class="w-7 h-7 bg-amber-400 text-white rounded-full flex items-center justify-center font-bold text-xs mb-2">
-                            ①</div>
-                        <p class="font-bold text-gray-800 mb-1">아웃룩 앱 → Copilot</p>
-                        <p class="text-xs text-gray-600">아웃룩을 열고 <strong>좌측 사이드바의 Copilot 버튼</strong>을 클릭합니다.</p>
-                    </div>
-                    <div class="bg-white rounded-lg p-4 border border-amber-200">
-                        <div
-                            class="w-7 h-7 bg-amber-400 text-white rounded-full flex items-center justify-center font-bold text-xs mb-2">
-                            ②</div>
-                        <p class="font-bold text-gray-800 mb-1">'자동' → Claude 변경</p>
-                        <p class="text-xs text-gray-600">좌측 상단 <strong>'자동'</strong> 클릭 → <strong>Claude</strong> 선택
-                            <span class="text-red-500 font-semibold">(※ 사내 M365 라이선스 및 버전에 따라 화면이 상이할 수 있습니다.)</span>
-                        </p>
-                    </div>
-                    <div class="bg-white rounded-lg p-4 border border-amber-200">
-                        <div
-                            class="w-7 h-7 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-xs mb-2">
-                            ③</div>
-                        <p class="font-bold text-gray-800 mb-1">프롬프트 전송</p>
-                        <p class="text-xs text-gray-600">아래 프롬프트를 입력하거나 업무 내용을 붙여넣어 전송합니다.</p>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="font-bold text-xl mb-4"><i class="fas fa-file-powerpoint mr-2 text-red-600"></i>시나리오: 업무 내용 → PPT
-                슬라이드 구성안</h3>
-            <div class="prompt-box">
-                <span class="prompt-label">BEST PROMPT (Claude 모델)</span>
-                "아래 이번 주 업무 내용을 바탕으로 경영진 보고용 PowerPoint 슬라이드 구성안을 만들어 줘.
-
-                [슬라이드 구성 요건]
-                1. 슬라이드 수: 5~7장
-                2. 각 슬라이드마다 [제목 / 핵심 메시지 1줄 / 세부 내용 불렛 3개] 형식
-                3. 첫 슬라이드: 이번 주 핵심 성과 요약 (제목형 결론)
-                4. 데이터·수치가 있으면 표 또는 비교 형태로 표현
-                5. 마지막 슬라이드: Next Step / 요청 사항
-
-                [어조]: 간결하고 공식적인 임원 보고 스타일 (~함, ~예정, ~완료)
-
-                [이번 주 업무 내용]
-                (여기에 이메일 또는 업무 내용을 붙여넣으세요)"
-            </div>
-        </section>
-        <!-- PART 3 끝 -->
-        <section id="lg-template" class="content-section">
-            <h2 class="section-header">3-6. LG전자 스타일 맞춤형 프롬프트 템플릿</h2>
-
-            <div class="p-6 rounded-lg mb-8" style="background:#222;color:#fff">
-                <h4 class="font-bold text-lg mb-4" style="color:#C10933"><i class="fas fa-crown mr-2"></i>LG 보고서 스타일 4원칙
-                </h4>
-                <div class="grid grid-cols-4 gap-4 text-xs">
-                    <div>
-                        <p class="font-bold mb-1" style="color:#C10933">① 빽빽하게</p>
-                        <p style="color:#bbb">여백 최소화, 한 페이지에 최대 정보량. 다단 구조 선호</p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-1" style="color:#C10933">② 구조적으로</p>
-                        <p style="color:#bbb">현상→원인→대응→기대효과 4단 논리</p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-1" style="color:#C10933">③ 표로 정리</p>
-                        <p style="color:#bbb">비교·현황·일정은 반드시 Table 형태</p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-1" style="color:#C10933">④ One-Page</p>
-                        <p style="color:#bbb">제목이 곧 결론. 한 페이지 한 메시지</p>
-                    </div>
-                </div>
-            </div>
-
-            <h4 class="font-bold text-lg mb-4">■ 프롬프트 공식 5단계</h4>
-            <div class="grid grid-cols-5 gap-3 text-center text-xs mb-10">
-                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
-                    <p class="text-xl font-bold text-red-700">①</p>
-                    <p class="font-bold">배경 제시</p>
-                    <p class="text-gray-500">현재 상황·데이터</p>
-                </div>
-                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
-                    <p class="text-xl font-bold text-red-700">②</p>
-                    <p class="font-bold">목적 명시</p>
-                    <p class="text-gray-500">임원보고/팀회의</p>
-                </div>
-                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
-                    <p class="text-xl font-bold text-red-700">③</p>
-                    <p class="font-bold">구조 지정</p>
-                    <p class="text-gray-500">현상-원인-대응</p>
-                </div>
-                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
-                    <p class="text-xl font-bold text-red-700">④</p>
-                    <p class="font-bold">톤·분량</p>
-                    <p class="text-gray-500">간결/A4 1장</p>
-                </div>
-                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
-                    <p class="text-xl font-bold text-red-700">⑤</p>
-                    <p class="font-bold">출력 형식</p>
-                    <p class="text-gray-500">표/번호/목차</p>
-                </div>
-            </div>
-
-            <h4 class="font-bold text-lg mb-4">■ 바로 쓰는 템플릿</h4>
-
-            <h5 class="font-bold mb-2 mt-6"><i class="fas fa-file-alt mr-1 text-red-600"></i> 임원 보고용 현황 보고서</h5>
-            <div class="prompt-box">
-                <span class="prompt-label">COPY & USE</span>
-                "다음 데이터를 기반으로 임원 보고용 보고서를 작성해 줘.
-                [데이터: 여기에 붙여넣기]
-
-                ■ 작성 조건:
-                1. 구조: 현상 → 원인분석 → 대응방안 → 기대효과
-                2. 제목은 결론형 (예: '6월 CS 만족도 92.3%, 전월 대비 1.2%p 상승')
-                3. 핵심 지표는 표로 정리 (전월비, 전년비 포함)
-                4. 대응방안은 번호 매겨 3가지 이내
-                5. 톤: 간결·공식적, A4 1장, 다단 구조로 빽빽하게
-                6. 마지막에 '요청사항' 1~2줄 추가"
-            </div>
-
-            <h5 class="font-bold mb-2 mt-8"><i class="fas fa-desktop mr-1 text-red-600"></i> HTML 발표자료 (LG 스타일)</h5>
-            <div class="prompt-box">
-                <span class="prompt-label">COPY & USE</span>
-                "아래 보고서 내용을 바탕으로 브라우저에서 실행되는 HTML 발표자료(웹 슬라이드)를 제작해 줘.
-
-                - 슬라이드 분량: 5~8장 내외
-                - 키보드 좌우 화살표로 이전/다음 슬라이드로 넘어가는 스크립트 포함
-                - 각 슬라이드는 제목과 본문(다단 구조)으로 깔끔하게 구성
-                - 디자인: 흰색 배경, 포인트 컬러 #C10933
-
-                [보고 내용]
-                (여기에 보고할 텍스트 내용을 붙여넣으세요)"
-            </div>
-
-            <h5 class="font-bold mb-2 mt-8"><i class="fas fa-language mr-1 text-red-600"></i> 전문용어 유지 번역</h5>
-            <div class="prompt-box">
-                <span class="prompt-label">COPY & USE</span>
-                "다음 영문을 한국어로 번역해 줘.
-                ■ 조건:
-                1. 가전/CS 업계 전문용어는 영어 병기 (예: '고객 생애 가치(CLV)')
-                2. 고유명사·브랜드명은 원문 유지
-                3. 직역 금지, 자연스러운 한국어
-                4. 번역 후 '주요 용어 대조표' 추가
-                [번역할 텍스트 붙여넣기]"
-            </div>
-        </section>
-
-
-        <!-- PART 4. AI 에이전트 만들기 -->
+        <!-- PART 3. AI 에이전트 만들기 -->
         <section id="cowork-intro" class="content-section">
-            <h2 class="section-header">4-1. MS Cowork 소개</h2>
+            <h2 class="section-header">3-1. MS Cowork 소개</h2>
 
             <div class="mb-5 flex items-start gap-3 p-4 bg-yellow-50 border border-yellow-300 rounded-xl text-sm">
                 <i class="fas fa-circle-info text-yellow-500 mt-0.5 shrink-0 text-lg"></i>
@@ -2999,7 +2422,7 @@
 
         <!-- 4-2. 나만의 에이전트 만들기 -->
         <section id="agent-build" class="content-section">
-            <h2 class="section-header">4-2. 나만의 에이전트 만들기</h2>
+            <h2 class="section-header">3-2. 나만의 에이전트 만들기</h2>
 
             <div class="info-box">
                 <h3 class="font-bold text-xl mb-2"><i class="fas fa-robot mr-2 text-red-600"></i>Copilot에서 직접 에이전트를 만들 수
@@ -3100,7 +2523,7 @@
 
         <!-- 4-3. 에이전트 배포하기 -->
         <section id="agent-deploy" class="content-section">
-            <h2 class="section-header">4-3. 에이전트 배포하기</h2>
+            <h2 class="section-header">3-3. 에이전트 배포하기</h2>
 
             <p class="mb-6 text-gray-700">만든 에이전트를 팀원들이 실제로 쓸 수 있도록 <strong>배포(Publish)</strong>해야 합니다. 용도에 맞는 채널을 선택해
                 배포할 수 있습니다.</p>
@@ -3159,6 +2582,568 @@
                     <li>✓ 사내망 계정으로만 접근 가능하도록 <strong>접근 권한 설정</strong> 확인</li>
                     <li>✓ 외부 공개 배포 시 보안팀 사전 협의 필요</li>
                 </ul>
+            </div>
+        </section>
+
+
+        <!-- PART 4. 대시보드·발표자료 만들기 -->
+        <section id="mvp-concept" class="content-section">
+            <h2 class="section-header">4-1. 즉시 실행하는 MVP 개념</h2>
+            <p class="text-lg mb-8"><strong>MVP (Minimum Viable Product, 최소 기능 제품)</strong>는 회의실에서 말로만 요구사항을 전달하는 한계를 극복하기
+                위해, AI를 통해 <strong>실제 브라우저에서 동작하는 인터랙티브 샘플</strong>을 즉시 생성하여 협업하는 방식입니다.</p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <div class="p-6 bg-white border-2 border-dashed border-red-200 rounded-xl">
+                    <h3 class="font-bold text-red-700 mb-3"><i class="fas fa-times-circle mr-2"></i>전통적인 방식 (동상이몽)</h3>
+                    <ul class="text-sm space-y-3 text-gray-600">
+                        <li>- 텍스트 기획서만 보고 개발/디자인 진행</li>
+                        <li>- 결과물이 완성된 후 생각했던 것과 달라 전면 수정 반복</li>
+                        <li>- 소통 오류 및 프로젝트 일정 지연 발생</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-red-50 border-2 border-red-600 rounded-xl">
+                    <h3 class="font-bold text-red-700 mb-3"><i class="fas fa-check-circle mr-2"></i>MVP 제품 개발 (시각적 협업)
+                    </h3>
+                    <ul class="text-sm space-y-3 text-gray-700">
+                        <li>- 아웃룩 Copilot(Claude)을 활용해 <strong>5분 만에 실제 작동 HTML 생성</strong></li>
+                        <li>- 화면 설계와 동적 인터랙션을 회의 중 실시간 눈으로 확인</li>
+                        <li>- 개발팀에 <strong>"이 샘플 코드 그대로 구축해주세요"</strong>라고 명확한 의사전달</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4 class="font-bold mb-3"><i class="fas fa-sitemap text-red-600 mr-2"></i>MVP 활용 가능한 업무 영역</h4>
+                <div class="grid md:grid-cols-3 gap-4 text-sm mt-4">
+                    <div class="p-4 bg-white border rounded-lg text-center">
+                        <div class="text-3xl mb-2">📊</div>
+                        <p class="font-bold text-gray-800">CS 대시보드</p>
+                        <p class="text-xs text-gray-500 mt-1">VOC·NPS 데이터를 실시간 시각화하는 웹 대시보드 시안</p>
+                    </div>
+                    <div class="p-4 bg-white border rounded-lg text-center">
+                        <div class="text-3xl mb-2">🎯</div>
+                        <p class="font-bold text-gray-800">보고용 슬라이드</p>
+                        <p class="text-xs text-gray-500 mt-1">키보드로 넘기는 인터랙티브 HTML 발표자료</p>
+                    </div>
+                    <div class="p-4 bg-white border rounded-lg text-center">
+                        <div class="text-3xl mb-2">🔧</div>
+                        <p class="font-bold text-gray-800">업무 도구 시안</p>
+                        <p class="text-xs text-gray-500 mt-1">신규 시스템·서비스 기획 단계의 UI MVP 시제품</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mvp-dashboard" class="content-section">
+            <h2 class="section-header">4-2. 대시보드 MVP 제작</h2>
+            <p class="mb-6">코딩 지식 없이도 <strong>아웃룩 Copilot(Claude 모델)</strong>으로 실제 브라우저에서 작동하는 대시보드를 즉시 만들고 회의에서 시연할 수
+                있습니다.</p>
+
+            <div class="p-6 bg-gray-50 rounded-lg mb-8">
+                <h4 class="font-bold text-lg text-red-700 mb-3"><i class="fas fa-cogs mr-2"></i>대시보드 MVP 제작 4단계</h4>
+                <ol class="list-decimal pl-6 space-y-3 text-sm text-gray-700">
+                    <li><strong>아웃룩 앱 실행:</strong> 아웃룩을 열고 <strong>좌측 사이드바의 Copilot 버튼</strong>을 클릭합니다.</li>
+                    <li><strong>Claude 모델 선택:</strong> 코파일럿 창 좌측 상단의 <strong>'자동' 버튼</strong>을 클릭하여
+                        <strong>Claude(클로드)</strong>로 변경합니다.
+                        <span class="text-xs text-red-500 font-semibold">(※ 사내 라이선스/M365 버전에 따라 해당 버튼 및 모델 선택 화면이 지원되지
+                            않거나 다를 수 있습니다.)</span>
+                    </li>
+                    <li><strong>파일 첨부 및 프롬프트 전송:</strong> 코파일럿 창 하단의 <strong>📎 클립(첨부) 버튼</strong>을 클릭하여 실습용 대용량 파일인 <strong>`주차별_CS_NPS_시각화.csv`</strong>를 업로드하고 아래 프롬프트를 전송합니다.</li>
+                    <li><strong>HTML 저장 & 시연:</strong> 생성된 코드를 복사 → 메모장에 붙여넣기 → <strong>파일명.html</strong>로 저장 → 더블클릭하여
+                        브라우저에서 바로 시연합니다.</li>
+                </ol>
+            </div>
+
+            <h3 class="font-bold text-xl mb-4"><i class="fas fa-chart-bar mr-2 text-red-600"></i>시나리오: CS 현황 대시보드 즉석 제작</h3>
+            <div class="prompt-box">
+                <span class="prompt-label">BEST PROMPT</span>
+                "첨부된 `주차별_CS_NPS_시각화.csv` 파일은 주차별/제품별 고객 만족도 및 수리 완료 상태 로우 데이터야. 이 데이터를 기반으로 브라우저에서 바로 실행되는 대화형 HTML/JS 대시보드를 만들어 줘.
+
+                ■ 데이터 요약 및 시각화 요건:
+                1. 상단: KPI 카드 4개 — 총 접수건수(전체 행 개수), 완료건수('진행상태'가 '완료'인 행의 개수), 평균 처리일수('소요시간(일)'의 평균), 평균 NPS 만족도 점수('NPS 점수(0-10)'의 평균)
+                2. 중앙: 제품 카테고리별 평균 NPS 점수 막대 차트 (가장 낮은 제품은 빨간색으로 시각적 강조)
+                3. 하단: 주차별(19주차~25주차) 접수건수 추이를 보여주는 꺾은선 그래프
+
+                ■ 디자인 및 라이브러리:
+                - Tailwind CSS와 Chart.js를 CDN으로 불러와서 사용해 줘.
+                - 배경: 깔끔한 흰색/회색(#F3F4F6) 톤, 포인트 컬러: LG 레드(#C10933)
+                - 반응형 레이아웃, 카드 컴포넌트에 그림자(shadow-sm) 적용
+                - 마우스 오버 시 차트에 상세 수치가 툴팁으로 표시되도록 설정
+
+                ■ 결과물:
+                - `<!DOCTYPE html>`로 시작해서 `</html>`로 끝나는 단일 HTML 전체 코드를 출력해 줘. CSS와 JS는 모두 내장해 줘."
+            </div>
+
+            <h3 class="font-bold text-xl mb-4 mt-10"><i class="fas fa-play-circle mr-2 text-green-600"></i>시연 가이드: 회의에서
+                MVP 보여주기</h3>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div class="p-5 border rounded-lg bg-white">
+                    <h4 class="font-bold mb-3"><i class="fas fa-file-code mr-2 text-red-700"></i>방법 A: 로컬 파일 공유 (가장 빠름)
+                    </h4>
+                    <p class="text-xs text-gray-500 mb-3">사내 메신저나 메일로 즉시 공유하는 방법</p>
+                    <ol class="space-y-2 text-gray-600 text-xs">
+                        <li>1. Copilot이 생성한 코드 전체를 <strong>복사(Ctrl+A → Ctrl+C)</strong></li>
+                        <li>2. 메모장을 열고 붙여넣기 후 <strong>파일명.html</strong>로 저장</li>
+                        <li>3. 파일을 더블클릭하면 브라우저에서 즉시 실행 — <strong>회의 중 시연 가능</strong></li>
+                        <li>4. 팀즈 채팅이나 메일에 html 파일 첨부 공유</li>
+                    </ol>
+                </div>
+                <div class="p-5 border rounded-lg bg-red-50 border-red-200">
+                    <h4 class="font-bold mb-3"><i class="fas fa-wand-magic-sparkles mr-2 text-red-700"></i>MVP 시연의 핵심 가치
+                    </h4>
+                    <ul class="space-y-2 text-gray-700 text-xs">
+                        <li>✓ 기획 단계에서 <strong>"이렇게 보여주면 어떨까요?"</strong> 즉석 확인</li>
+                        <li>✓ 회의 참석자 모두가 같은 화면을 보며 피드백 제공 가능</li>
+                        <li>✓ <strong>"조금 바꿔줘"</strong>를 Copilot에 요청하면 실시간 수정도 가능</li>
+                        <li>✓ 개발팀에 명확한 기준 화면 전달 → 커뮤니케이션 비용 대폭 절감</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="mvp-ppt" class="content-section">
+            <h2 class="section-header">4-3. HTML 발표자료 제작</h2>
+            <p class="mb-6">전통적인 PPT 대신, 웹 브라우저에서 실행되고 키보드 방향키로 슬라이드가 넘어가는 <strong>인터랙티브 웹 슬라이드</strong>를 만듭니다.
+                Copilot이 제공하는 CSS 애니메이션과 깔끔한 구조를 통해 템플릿보다 세련된 보고서를 즉시 완성할 수 있습니다.</p>
+
+            <div class="prompt-box">
+                <span class="prompt-label">COPY & USE</span>
+                "아래 보고서 내용을 바탕으로 브라우저에서 실행되는 HTML 발표자료(웹 슬라이드)를 제작해 줘.
+
+                - 슬라이드 분량: 5~8장 내외
+                - 키보드 좌우 화살표로 이전/다음 슬라이드로 넘어가는 스크립트 포함
+                - 각 슬라이드는 제목과 본문(다단 구조)으로 깔끔하게 구성
+                - 디자인: 흰색 배경, 포인트 컬러 #C10933
+
+                [보고 내용]
+                (여기에 보고할 텍스트 내용을 붙여넣으세요)"
+            </div>
+
+            <div class="mt-6 p-5 bg-blue-50 border border-blue-200 rounded-xl">
+                <h4 class="font-bold text-blue-900 mb-3"><i class="fas fa-lightbulb mr-2 text-blue-500"></i>HTML 슬라이드 vs
+                    일반 PPT 비교</h4>
+                <table class="table-custom text-sm">
+                    <thead>
+                        <tr>
+                            <th>항목</th>
+                            <th>HTML 슬라이드 (MVP)</th>
+                            <th>PowerPoint</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>제작 시간</td>
+                            <td class="text-green-700 font-bold">5~10분 (Copilot)</td>
+                            <td class="text-gray-500">1~2시간</td>
+                        </tr>
+                        <tr>
+                            <td>인터랙션</td>
+                            <td class="text-green-700 font-bold">차트 클릭, 애니메이션</td>
+                            <td class="text-gray-500">제한적</td>
+                        </tr>
+                        <tr>
+                            <td>공유 방법</td>
+                            <td class="text-green-700 font-bold">html 파일 or 링크</td>
+                            <td class="text-gray-500">pptx 파일</td>
+                        </tr>
+                        <tr>
+                            <td>수정 방법</td>
+                            <td class="text-green-700 font-bold">Copilot에 추가 요청</td>
+                            <td class="text-gray-500">수동 편집</td>
+                        </tr>
+                        <tr>
+                            <td>적합 용도</td>
+                            <td>MVP 시안, 현황 공유</td>
+                            <td>최종 공식 보고서</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3-4. HTML 배포의 의미 & 방법 -->
+        <section id="mvp-deploy" class="content-section">
+            <h2 class="section-header">4-4. HTML 배포의 의미 & 방법</h2>
+
+            <!-- 배포의 의미 설명 박스 -->
+            <div class="p-6 bg-red-50 border border-red-200 rounded-xl mb-6">
+                <h4 class="font-bold text-red-900 mb-2"><i class="fas fa-network-wired mr-2 text-red-700"></i>HTML
+                    배포(Deploy)란 무엇이며 왜 필요할까요?</h4>
+                <p class="text-sm text-gray-700 leading-relaxed mb-3">
+                    <strong>배포(Deployment)</strong>란 로컬 PC에서 혼자 보던 HTML 문서나 애플리케이션 코드를 다른 사람들도 접속해서 사용할 수 있도록
+                    <strong>웹상에 띄우고 접근 권한을 부여하는 과정</strong>을 의미합니다.
+                </p>
+                <ul class="text-xs text-gray-600 space-y-2 pl-4 list-disc">
+                    <li><strong>정적 자산 시각화:</strong> HTML/CSS로 구성된 대시보드나 발표 자료는 실행 가능한 서버나 경로가 있어야 동적 데이터나 클릭 이벤트가 브라우저에서
+                        정상 작동합니다.</li>
+                    <li><strong>동상이몽 해결:</strong> URL 링크 하나 혹은 공유 서버 경로를 통해 팀원이나 경영진이 동일한 결과물을 실시간으로 보며 즉각적으로 소통할 수 있게
+                        합니다.</li>
+                    <li><strong>사내 환경의 대안:</strong> 별도의 상용 호스팅이나 복잡한 사내 서버 인프라를 승인받지 않더라도, 간단한 임시/대안 배포 방식을 통해 MVP(최소 기능
+                        제품) 수준의 기획 검증을 현업에서 즉각 진행할 수 있습니다.</li>
+                </ul>
+            </div>
+
+            <p class="mb-8 text-sm text-gray-600">Copilot으로 만든 대시보드나 발표자료(HTML)를 팀원, 경영진, 외부 파트너에게 공유하는 <strong>3가지 실전
+                    배포 방법</strong>을 안내합니다. <span class="text-gray-500">B·C 방법은 처음이면 낯설 수 있으니, 카드의 <strong>'자세히 보기'</strong> 버튼을 눌러 화면을 보며 그대로 따라 해 보세요.</span></p>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-10">
+                <!-- 방법 A -->
+                <div class="p-6 border-2 border-red-200 rounded-xl bg-white">
+                    <div class="text-center mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-2"><i
+                                class="fas fa-file-code text-red-700 text-xl"></i></div>
+                        <h3 class="font-bold text-lg text-gray-800">방법 A: HTML 파일 직접 전송</h3>
+                        <p class="text-xs text-green-600 font-bold mt-1">⚡ 가장 빠름 (30초)</p>
+                    </div>
+                    <ol class="text-sm space-y-2 text-gray-600">
+                        <li>1. Copilot이 생성한 코드 전체를 <strong>복사</strong></li>
+                        <li>2. 메모장을 열고 붙여넣기</li>
+                        <li>3. <strong>파일명.html</strong>로 저장</li>
+                        <li>4. 팀즈 채팅·메일에 파일 첨부 공유</li>
+                        <li>5. 받은 사람은 더블클릭으로 바로 실행</li>
+                    </ol>
+                    <div class="mt-3 p-2 bg-yellow-50 rounded text-xs text-yellow-800">
+                        <i class="fas fa-circle-info mr-1"></i>가장 간편하지만, 파일을 받아야만 볼 수 있는 제한이 있습니다.
+                    </div>
+                </div>
+
+                <!-- 방법 B -->
+                <div class="p-6 border-2 border-blue-200 rounded-xl bg-white">
+                    <div class="text-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2"><i
+                                class="fab fa-github text-gray-800 text-xl"></i></div>
+                        <h3 class="font-bold text-lg text-gray-800">방법 B: GitHub Pages 배포</h3>
+                        <p class="text-xs text-blue-600 font-bold mt-1">🔗 URL 링크로 공유</p>
+                    </div>
+                    <ol class="text-sm space-y-2 text-gray-600">
+                        <li>1. <a href="https://github.com" target="_blank"
+                                class="text-blue-600 underline">github.com</a> 회원가입 후 <strong>Public Repository</strong>
+                            생성</li>
+                        <li>2. <strong>Add file → Create new file</strong> → 이름을 <strong>index.html</strong>로 → 코드 붙여넣기</li>
+                        <li>3. Settings > Pages > Branch: main 선택 후 Save</li>
+                        <li>4. 생성된 <strong>https://username.github.io/repo/</strong> 링크로 공유</li>
+                    </ol>
+                    <button onclick="document.getElementById('modal-deploy-b').classList.remove('hidden')" class="btn-hover-effect mt-3 w-full flex items-center justify-center gap-1.5 px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-bold transition-colors cursor-pointer">
+                        <i class="fas fa-list-ol"></i> 자세히 보기 (화면 따라하기)
+                    </button>
+                    <div class="mt-3 p-2 bg-blue-50 rounded text-xs text-blue-800">
+                        <i class="fas fa-circle-info mr-1"></i>인터넷만 되면 누구나 접근 가능. 모바일에서도 열람 가능합니다.
+                    </div>
+                    <div class="mt-2 p-2 bg-red-50 border border-red-200 rounded text-xs text-red-800 font-bold">
+                        <i class="fas fa-exclamation-triangle mr-1"></i> [보안 경고] 사내 데이터(VOC, NPS, 미공개 실적 등)가 포함된 문서는 외부
+                        공개되는 GitHub Pages 배포가 절대 금지됩니다! 보안이 필요 없는 가짜(더미) 샘플 데이터의 UI 시안 배포용으로만 사용하시기 바랍니다.
+                    </div>
+                </div>
+
+                <!-- 방법 C (내 PC를 임시 웹서버로) -->
+                <div class="p-6 border-2 border-purple-200 rounded-xl bg-white">
+                    <div class="text-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-server text-purple-700 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-800">방법 C: 내 PC를 임시 웹서버로</h3>
+                        <p class="text-xs text-purple-600 font-bold mt-1">🌐 사내망 동료가 링크로 접속</p>
+                    </div>
+                    <ol class="text-sm space-y-2 text-gray-600">
+                        <li>1. HTML 파일을 폴더 하나에 <strong>index.html</strong>로 저장</li>
+                        <li>2. 그 폴더에서 <strong>터미널</strong>을 열고 <code class="bg-gray-100 px-1 rounded text-xs">npx serve</code> 입력</li>
+                        <li>3. 터미널에 표시된 <strong>Network 주소</strong>(http://내IP:포트) 확인</li>
+                        <li>4. 그 주소를 동료에게 전달</li>
+                        <li>5. 같은 사내망이면 브라우저로 바로 접속</li>
+                    </ol>
+                    <button onclick="document.getElementById('modal-deploy-c').classList.remove('hidden')" class="btn-hover-effect mt-3 w-full flex items-center justify-center gap-1.5 px-3 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-xs font-bold transition-colors cursor-pointer">
+                        <i class="fas fa-list-ol"></i> 자세히 보기 (화면 따라하기)
+                    </button>
+                    <div class="mt-3 p-2 bg-purple-50 rounded text-xs text-purple-800">
+                        <i class="fas fa-circle-info mr-1"></i>GitHub 없이 <strong>내 PC가 서버 역할</strong>을 합니다. 단, 내 PC가 켜져 있고 서버가 실행 중일 때만 접속되며, <strong>같은 사내망</strong>에 있는 동료만 열 수 있습니다.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 방법 B 상세 팝업 모달 -->
+            <div id="modal-deploy-b" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(0,0,0,0.45);" onclick="if(event.target===this)this.classList.add('hidden')">
+                <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] overflow-y-auto">
+                    <div class="bg-blue-600 px-5 py-3 flex items-center justify-between sticky top-0">
+                        <p class="font-bold text-white text-sm"><i class="fab fa-github mr-2"></i>방법 B: GitHub Pages 배포 — 처음부터 따라하기</p>
+                        <button onclick="document.getElementById('modal-deploy-b').classList.add('hidden')" class="text-white hover:text-blue-100 text-xl leading-none">&times;</button>
+                    </div>
+                    <div class="px-5 py-4 text-sm text-gray-700 space-y-4">
+                        <p class="text-xs text-gray-500">GitHub는 무료로 웹페이지를 인터넷에 올릴 수 있는 서비스입니다. 아래 순서대로 한 번만 따라 하면 <strong>누구나 접속할 수 있는 링크(URL)</strong>가 만들어집니다.</p>
+                        <ol class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">1</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">GitHub 회원가입</p>
+                                    <p class="text-xs text-gray-600 mt-0.5"><a href="https://github.com" target="_blank" class="text-blue-600 underline">github.com</a>에 접속해 이메일로 무료 계정을 만듭니다. (이미 있으면 로그인)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">2</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">새 저장소(Repository) 만들기</p>
+                                    <p class="text-xs text-gray-600 mt-0.5">우측 상단 <strong>+</strong> → <strong>New repository</strong> 클릭. 이름을 정하고 <strong>공개(Public)</strong>를 선택한 뒤 <strong>Create repository</strong>를 누릅니다.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">3</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">새 파일을 만들어 코드 붙여넣기</p>
+                                    <p class="text-xs text-gray-600 mt-0.5">먼저 Copilot이 만든 <strong>HTML 코드 전체를 복사</strong>해 둡니다. 저장소 화면에서 <strong>Add file → Create new file</strong>를 클릭합니다. <span class="text-red-600 font-semibold">(파일 업로드가 막혀 있을 수 있으니 '새 파일 생성' 방식을 사용합니다.)</span> 파일 이름을 반드시 <code class="bg-gray-100 px-1 rounded">index.html</code>로 적고, 넓은 편집창에 복사한 <strong>코드를 붙여넣기(Ctrl+V)</strong> 한 뒤 <strong>Commit changes</strong>를 누릅니다.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">4</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">Pages 기능 켜기</p>
+                                    <p class="text-xs text-gray-600 mt-0.5">상단 <strong>Settings</strong> → 좌측 <strong>Pages</strong> → Branch를 <strong>main</strong>으로 선택하고 <strong>Save</strong>를 누릅니다.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">5</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">링크 확인 & 공유</p>
+                                    <p class="text-xs text-gray-600 mt-0.5">잠시 기다리면(1~2분) <code class="bg-gray-100 px-1 rounded">https://아이디.github.io/저장소이름/</code> 형태의 주소가 생깁니다. 이 링크를 복사해 공유하면 누구나 접속할 수 있습니다.</p>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="p-3 bg-red-50 border border-red-200 rounded-lg text-xs text-red-800 font-bold">
+                            <i class="fas fa-exclamation-triangle mr-1"></i> 사내 데이터(VOC, NPS, 미공개 실적 등)가 담긴 문서는 절대 올리지 마세요. 인터넷에 공개되므로 <strong>더미(가짜) 샘플 데이터</strong>로 만든 UI 시안만 올립니다.
+                        </div>
+                        <button onclick="document.getElementById('modal-deploy-b').classList.add('hidden')" class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-sm transition-colors">확인</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 방법 C 상세 팝업 모달 -->
+            <div id="modal-deploy-c" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(0,0,0,0.45);" onclick="if(event.target===this)this.classList.add('hidden')">
+                <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] overflow-y-auto">
+                    <div class="px-5 py-3 flex items-center justify-between sticky top-0" style="background:var(--copilot-purple);">
+                        <p class="font-bold text-white text-sm"><i class="fas fa-server mr-2"></i>방법 C: 내 PC를 임시 웹서버로 만들기 — 처음부터 따라하기</p>
+                        <button onclick="document.getElementById('modal-deploy-c').classList.add('hidden')" class="text-white hover:text-purple-100 text-xl leading-none">&times;</button>
+                    </div>
+                    <div class="px-5 py-4 text-sm text-gray-700 space-y-4">
+                        <p class="text-xs text-gray-500">GitHub에 올리지 않고, <strong>내 PC에서 작은 웹서버를 실행</strong>해 같은 사내망 동료가 <code class="bg-gray-100 px-1 rounded">http://내IP:포트</code> 링크로 접속하게 하는 방법입니다. <strong>파이썬·VS Code 없이, 터미널 명령 한 줄</strong>로 띄웁니다.</p>
+
+                        <!-- 터미널(npx serve) -->
+                        <div class="rounded-xl border border-purple-200 overflow-hidden">
+                            <div class="px-4 py-2 text-xs font-bold text-white flex items-center gap-2" style="background:var(--copilot-purple);"><i class="fas fa-terminal"></i> 터미널 명령 한 줄로 서버 띄우기</div>
+                            <ol class="px-4 py-3 space-y-2.5">
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">1</span><div><p class="text-xs text-gray-700"><strong>폴더 준비:</strong> 빈 폴더를 만들고, Copilot이 만든 코드를 <code class="bg-gray-100 px-1 rounded">index.html</code>로 저장해 넣습니다.</p></div></li>
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">2</span><div><p class="text-xs text-gray-700"><strong>그 폴더에서 터미널 열기:</strong> 파일 탐색기에서 폴더를 연 뒤, 주소창에 <code class="bg-gray-100 px-1 rounded">cmd</code>를 입력하고 Enter → 그 폴더 위치에서 명령창이 열립니다. <span class="text-gray-400">(또는 명령창에서 <code class="bg-gray-100 px-1 rounded">cd 폴더경로</code>로 이동)</span></p></div></li>
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">3</span><div><p class="text-xs text-gray-700"><strong>Node.js 확인 (없으면 명령어로 설치):</strong> <code class="bg-gray-100 px-1 rounded">node -v</code> 입력 → 버전(예: v20.x)이 나오면 이미 있는 것. <strong>"인식되지 않는 명령"</strong>이 뜨면 아래 한 줄로 설치합니다.</p>
+                                    <div class="mt-1.5 bg-gray-900 text-gray-100 rounded-md px-3 py-2 font-mono text-[11px] leading-relaxed">winget install OpenJS.NodeJS.LTS</div>
+                                    <p class="text-[11px] text-gray-500 mt-1">→ Windows 내장 <strong>winget</strong>으로 설치됩니다. 설치가 끝나면 <strong>터미널을 닫았다 다시 열어야</strong> 인식됩니다. <span class="text-gray-400">(winget이 없거나 "관리자 권한 필요/차단" 메시지가 뜨면 사내 SW센터 또는 IT 담당에 문의)</span></p></div></li>
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">4</span><div><p class="text-xs text-gray-700"><strong>서버 실행 (명령 한 줄):</strong> <code class="bg-gray-100 px-1 rounded">npx serve</code> 입력 → Enter. 처음이면 "설치할까요(y)?"가 뜨는데 <strong>y</strong>를 누릅니다.</p></div></li>
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">5</span><div><p class="text-xs text-gray-700"><strong>주소 확인:</strong> 실행되면 터미널에 <code class="bg-gray-100 px-1 rounded">Local: http://localhost:3000</code>과 <code class="bg-gray-100 px-1 rounded">Network: http://10.x.x.x:3000</code>이 표시됩니다. <strong>Network 주소</strong>가 동료에게 공유할 링크입니다. <span class="text-red-600 font-semibold">(이 명령창을 닫으면 서버도 꺼집니다)</span></p></div></li>
+                            </ol>
+                        </div>
+
+                        <!-- 공통: IP 확인 & 링크 공유 -->
+                        <div class="rounded-xl border border-purple-200 overflow-hidden">
+                            <div class="px-4 py-2 text-xs font-bold text-white flex items-center gap-2" style="background:var(--copilot-purple);"><i class="fas fa-share-nodes"></i> 공통 — 동료에게 링크 공유하기</div>
+                            <div class="px-4 py-3 space-y-2 text-xs text-gray-700">
+                                <p><strong>주소 확인:</strong> <code class="bg-gray-100 px-1 rounded">npx serve</code>를 실행하면 터미널에 <strong>Network 주소</strong>(예: <code class="bg-gray-100 px-1 rounded">http://10.x.x.x:3000</code>)가 표시됩니다. 이것이 곧 공유용 링크라 IP를 따로 찾을 필요가 없습니다.</p>
+                                <p><strong>전달:</strong> 이 링크를 팀즈·메일로 보내면, <strong>같은 사내망</strong> 동료가 브라우저로 바로 접속합니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-3 bg-amber-50 border border-amber-300 rounded-lg text-xs text-amber-900 space-y-1">
+                            <p class="font-bold"><i class="fas fa-triangle-exclamation mr-1"></i> 꼭 기억하세요</p>
+                            <p>· <strong>내 PC가 켜져 있고 서버가 실행 중일 때만</strong> 접속됩니다. (PC를 끄거나 서버를 멈추면 링크도 끊김) — 상시 운영이 필요하면 GitHub Pages(방식 B) 권장</p>
+                            <p>· <strong>같은 사내망</strong>에 있는 사람만 접속 가능. 외부·재택에서는 열리지 않습니다.</p>
+                            <p>· 처음 실행 시 <strong>Windows 방화벽 허용</strong> 창이 뜨면 '허용'을 누릅니다.</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-deploy-c').classList.add('hidden')" class="w-full py-2 text-white font-bold rounded-lg text-sm transition-colors" style="background:var(--copilot-purple);">확인</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4 class="font-bold mb-2"><i class="fas fa-lightbulb text-red-600 mr-2"></i>어떤 방법을 선택해야 할까?</h4>
+                <table class="table-custom text-sm">
+                    <thead>
+                        <tr>
+                            <th>상황</th>
+                            <th>추천 방법</th>
+                            <th>이유</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>팀즈·메일로 빠르게 공유</td>
+                            <td class="font-bold text-red-700">A. 파일 전송</td>
+                            <td>30초 만에 완료</td>
+                        </tr>
+                        <tr>
+                            <td>외부·모바일 공유 필요</td>
+                            <td class="font-bold text-blue-600">B. GitHub Pages</td>
+                            <td>URL 하나로 어디서든 접근</td>
+                        </tr>
+                        <tr>
+                            <td>사내망 동료와 임시 공유 (서버 불필요)</td>
+                            <td class="font-bold text-purple-700">C. 내 PC를 웹서버로</td>
+                            <td>GitHub 없이 내 PC 링크로 접속</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3-5. Outlook Copilot으로 PPT 만들기 -->
+        <section id="copilot-ppt" class="content-section">
+            <h2 class="section-header">4-5. Outlook Copilot(Claude)으로 PPT 만들기</h2>
+
+            <div class="info-box">
+                <p><strong>아웃룩 Copilot</strong>에서는 다른 코파일럿과 달리 <strong>AI 모델을 Claude(클로드)로 변경</strong>할 수 있습니다.
+                    Claude 모델은 문서 구조화와 자연스러운 문장 생성에 특히 뛰어나, <strong>PowerPoint 발표자료 초안 제작</strong>에 최적화되어 있습니다.</p>
+            </div>
+
+            <div class="p-6 bg-amber-50 border border-amber-300 rounded-xl mb-8">
+                <h4 class="font-bold text-amber-900 mb-3"><i class="fas fa-star mr-2 text-amber-500"></i>아웃룩 Copilot +
+                    Claude 모델 선택법</h4>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="bg-white rounded-lg p-4 border border-amber-200">
+                        <div
+                            class="w-7 h-7 bg-amber-400 text-white rounded-full flex items-center justify-center font-bold text-xs mb-2">
+                            ①</div>
+                        <p class="font-bold text-gray-800 mb-1">아웃룩 앱 → Copilot</p>
+                        <p class="text-xs text-gray-600">아웃룩을 열고 <strong>좌측 사이드바의 Copilot 버튼</strong>을 클릭합니다.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 border border-amber-200">
+                        <div
+                            class="w-7 h-7 bg-amber-400 text-white rounded-full flex items-center justify-center font-bold text-xs mb-2">
+                            ②</div>
+                        <p class="font-bold text-gray-800 mb-1">'자동' → Claude 변경</p>
+                        <p class="text-xs text-gray-600">좌측 상단 <strong>'자동'</strong> 클릭 → <strong>Claude</strong> 선택
+                            <span class="text-red-500 font-semibold">(※ 사내 M365 라이선스 및 버전에 따라 화면이 상이할 수 있습니다.)</span>
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 border border-amber-200">
+                        <div
+                            class="w-7 h-7 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-xs mb-2">
+                            ③</div>
+                        <p class="font-bold text-gray-800 mb-1">프롬프트 전송</p>
+                        <p class="text-xs text-gray-600">아래 프롬프트를 입력하거나 업무 내용을 붙여넣어 전송합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="font-bold text-xl mb-4"><i class="fas fa-file-powerpoint mr-2 text-red-600"></i>시나리오: 업무 내용 → PPT
+                슬라이드 구성안</h3>
+            <div class="prompt-box">
+                <span class="prompt-label">BEST PROMPT (Claude 모델)</span>
+                "아래 이번 주 업무 내용을 바탕으로 경영진 보고용 PowerPoint 슬라이드 구성안을 만들어 줘.
+
+                [슬라이드 구성 요건]
+                1. 슬라이드 수: 5~7장
+                2. 각 슬라이드마다 [제목 / 핵심 메시지 1줄 / 세부 내용 불렛 3개] 형식
+                3. 첫 슬라이드: 이번 주 핵심 성과 요약 (제목형 결론)
+                4. 데이터·수치가 있으면 표 또는 비교 형태로 표현
+                5. 마지막 슬라이드: Next Step / 요청 사항
+
+                [어조]: 간결하고 공식적인 임원 보고 스타일 (~함, ~예정, ~완료)
+
+                [이번 주 업무 내용]
+                (여기에 이메일 또는 업무 내용을 붙여넣으세요)"
+            </div>
+        </section>
+        <!-- PART 3 끝 -->
+        <section id="lg-template" class="content-section">
+            <h2 class="section-header">4-6. LG전자 스타일 맞춤형 프롬프트 템플릿</h2>
+
+            <div class="p-6 rounded-lg mb-8" style="background:#222;color:#fff">
+                <h4 class="font-bold text-lg mb-4" style="color:#C10933"><i class="fas fa-crown mr-2"></i>LG 보고서 스타일 4원칙
+                </h4>
+                <div class="grid grid-cols-4 gap-4 text-xs">
+                    <div>
+                        <p class="font-bold mb-1" style="color:#C10933">① 빽빽하게</p>
+                        <p style="color:#bbb">여백 최소화, 한 페이지에 최대 정보량. 다단 구조 선호</p>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-1" style="color:#C10933">② 구조적으로</p>
+                        <p style="color:#bbb">현상→원인→대응→기대효과 4단 논리</p>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-1" style="color:#C10933">③ 표로 정리</p>
+                        <p style="color:#bbb">비교·현황·일정은 반드시 Table 형태</p>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-1" style="color:#C10933">④ One-Page</p>
+                        <p style="color:#bbb">제목이 곧 결론. 한 페이지 한 메시지</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="font-bold text-lg mb-4">■ 프롬프트 공식 5단계</h4>
+            <div class="grid grid-cols-5 gap-3 text-center text-xs mb-10">
+                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
+                    <p class="text-xl font-bold text-red-700">①</p>
+                    <p class="font-bold">배경 제시</p>
+                    <p class="text-gray-500">현재 상황·데이터</p>
+                </div>
+                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
+                    <p class="text-xl font-bold text-red-700">②</p>
+                    <p class="font-bold">목적 명시</p>
+                    <p class="text-gray-500">임원보고/팀회의</p>
+                </div>
+                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
+                    <p class="text-xl font-bold text-red-700">③</p>
+                    <p class="font-bold">구조 지정</p>
+                    <p class="text-gray-500">현상-원인-대응</p>
+                </div>
+                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
+                    <p class="text-xl font-bold text-red-700">④</p>
+                    <p class="font-bold">톤·분량</p>
+                    <p class="text-gray-500">간결/A4 1장</p>
+                </div>
+                <div class="p-3 border-2 border-red-200 rounded-lg bg-red-50">
+                    <p class="text-xl font-bold text-red-700">⑤</p>
+                    <p class="font-bold">출력 형식</p>
+                    <p class="text-gray-500">표/번호/목차</p>
+                </div>
+            </div>
+
+            <h4 class="font-bold text-lg mb-4">■ 바로 쓰는 템플릿</h4>
+
+            <h5 class="font-bold mb-2 mt-6"><i class="fas fa-file-alt mr-1 text-red-600"></i> 임원 보고용 현황 보고서</h5>
+            <div class="prompt-box">
+                <span class="prompt-label">COPY & USE</span>
+                "다음 데이터를 기반으로 임원 보고용 보고서를 작성해 줘.
+                [데이터: 여기에 붙여넣기]
+
+                ■ 작성 조건:
+                1. 구조: 현상 → 원인분석 → 대응방안 → 기대효과
+                2. 제목은 결론형 (예: '6월 CS 만족도 92.3%, 전월 대비 1.2%p 상승')
+                3. 핵심 지표는 표로 정리 (전월비, 전년비 포함)
+                4. 대응방안은 번호 매겨 3가지 이내
+                5. 톤: 간결·공식적, A4 1장, 다단 구조로 빽빽하게
+                6. 마지막에 '요청사항' 1~2줄 추가"
+            </div>
+
+            <h5 class="font-bold mb-2 mt-8"><i class="fas fa-desktop mr-1 text-red-600"></i> HTML 발표자료 (LG 스타일)</h5>
+            <div class="prompt-box">
+                <span class="prompt-label">COPY & USE</span>
+                "아래 보고서 내용을 바탕으로 브라우저에서 실행되는 HTML 발표자료(웹 슬라이드)를 제작해 줘.
+
+                - 슬라이드 분량: 5~8장 내외
+                - 키보드 좌우 화살표로 이전/다음 슬라이드로 넘어가는 스크립트 포함
+                - 각 슬라이드는 제목과 본문(다단 구조)으로 깔끔하게 구성
+                - 디자인: 흰색 배경, 포인트 컬러 #C10933
+
+                [보고 내용]
+                (여기에 보고할 텍스트 내용을 붙여넣으세요)"
+            </div>
+
+            <h5 class="font-bold mb-2 mt-8"><i class="fas fa-language mr-1 text-red-600"></i> 전문용어 유지 번역</h5>
+            <div class="prompt-box">
+                <span class="prompt-label">COPY & USE</span>
+                "다음 영문을 한국어로 번역해 줘.
+                ■ 조건:
+                1. 가전/CS 업계 전문용어는 영어 병기 (예: '고객 생애 가치(CLV)')
+                2. 고유명사·브랜드명은 원문 유지
+                3. 직역 금지, 자연스러운 한국어
+                4. 번역 후 '주요 용어 대조표' 추가
+                [번역할 텍스트 붙여넣기]"
             </div>
         </section>
 
