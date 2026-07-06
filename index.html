@@ -2860,6 +2860,33 @@
                 </div>
             </div>
 
+            <!-- IP·포트·DNS 기초 설명 -->
+            <div class="mb-10 p-6 bg-gray-50 border border-gray-200 rounded-xl">
+                <h4 class="font-bold text-gray-800 mb-1"><i class="fas fa-graduation-cap mr-2 text-gray-500"></i>알아두면 이해가 쉬운 개념 — IP · 포트 · DNS</h4>
+                <p class="text-xs text-gray-500 mb-5">위 A·B·C 방법에서 계속 등장하는 <strong>주소(URL)</strong>가 어떻게 구성되는지 알면, 오류가 나도 어디를 봐야 할지 감이 잡힙니다.</p>
+
+                <div class="grid md:grid-cols-3 gap-4 mb-5">
+                    <div class="p-4 bg-white border border-gray-200 rounded-lg">
+                        <p class="font-bold text-sm text-gray-800 mb-1"><i class="fas fa-house-signal mr-1.5 text-blue-500"></i>IP — 컴퓨터의 "주소"</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">인터넷(또는 사내망)에 연결된 모든 PC·서버에 부여되는 고유 번호입니다. <code class="bg-gray-100 px-1 rounded">10.20.30.40</code>처럼 숫자 4묶음으로 되어 있고, 우편번호처럼 "이 PC가 어디 있는지" 찾아가는 역할을 합니다. 방법 C에서 <code class="bg-gray-100 px-1 rounded">ipconfig</code>로 확인한 게 바로 <strong>내 PC의 IP</strong>입니다.</p>
+                    </div>
+                    <div class="p-4 bg-white border border-gray-200 rounded-lg">
+                        <p class="font-bold text-sm text-gray-800 mb-1"><i class="fas fa-door-open mr-1.5 text-purple-500"></i>포트 — 같은 주소의 "문 번호"</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">한 건물(IP)에 여러 개의 문(포트)이 있는 것과 같습니다. 한 PC에서 여러 프로그램이 동시에 인터넷을 쓸 수 있는 이유입니다. <code class="bg-gray-100 px-1 rounded">http://10.x.x.x:3000</code>에서 <strong>콜론(:) 뒤 숫자</strong>가 포트이며, <code class="bg-gray-100 px-1 rounded">npx serve -l 4000</code>처럼 원하는 문 번호를 직접 지정할 수 있습니다.</p>
+                    </div>
+                    <div class="p-4 bg-white border border-gray-200 rounded-lg">
+                        <p class="font-bold text-sm text-gray-800 mb-1"><i class="fas fa-signature mr-1.5 text-green-500"></i>DNS — 숫자를 "이름"으로 바꿔줌</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">IP 숫자는 외우기 어려우니, <code class="bg-gray-100 px-1 rounded">github.com</code> 같은 이름을 실제 IP로 자동 변환해주는 인터넷 전화번호부입니다. 방법 B에서 만든 <code class="bg-gray-100 px-1 rounded">아이디.github.io</code> 링크는 GitHub가 대신 DNS를 관리해 주는 것이고, 방법 C는 DNS 없이 <strong>IP 숫자를 그대로</strong> 쓰는 방식입니다.</p>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-gray-800 rounded-lg text-xs text-gray-200 leading-relaxed">
+                    <span class="text-gray-400"># 방법 B와 C의 주소를 비교하면 차이가 명확합니다</span><br>
+                    방법 B &nbsp;→&nbsp; <span class="text-green-400">https://아이디.github.io/저장소이름/</span> &nbsp;<span class="text-gray-500">(이름 = DNS가 IP로 변환 · 포트는 기본값 443이라 안 보임)</span><br>
+                    방법 C &nbsp;→&nbsp; <span class="text-yellow-300">http://10.x.x.x:3000</span> &nbsp;<span class="text-gray-500">(IP 숫자를 그대로 · :3000이 포트)</span>
+                </div>
+            </div>
+
             <!-- 방법 B 상세 팝업 모달 -->
             <div id="modal-deploy-b" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(0,0,0,0.45);" onclick="if(event.target===this)this.classList.add('hidden')">
                 <div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] overflow-y-auto">
@@ -2930,10 +2957,12 @@
                             <ol class="px-4 py-3 space-y-2.5">
                                 <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">1</span><div><p class="text-xs text-gray-700"><strong>폴더 준비:</strong> 빈 폴더를 만들고, Copilot이 만든 코드를 <code class="bg-gray-100 px-1 rounded">index.html</code>로 저장해 넣습니다.</p></div></li>
                                 <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">2</span><div><p class="text-xs text-gray-700"><strong>그 폴더에서 터미널 열기:</strong> 파일 탐색기에서 폴더를 연 뒤, 주소창에 <code class="bg-gray-100 px-1 rounded">cmd</code>를 입력하고 Enter → 그 폴더 위치에서 명령창이 열립니다. <span class="text-gray-400">(또는 명령창에서 <code class="bg-gray-100 px-1 rounded">cd 폴더경로</code>로 이동)</span></p></div></li>
-                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">3</span><div><p class="text-xs text-gray-700"><strong>Node.js 확인 (없으면 명령어로 설치):</strong> <code class="bg-gray-100 px-1 rounded">node -v</code> 입력 → 버전(예: v20.x)이 나오면 이미 있는 것. <strong>"인식되지 않는 명령"</strong>이 뜨면 아래 한 줄로 설치합니다.</p>
-                                    <div class="mt-1.5 bg-gray-900 text-gray-100 rounded-md px-3 py-2 font-mono text-[11px] leading-relaxed">winget install OpenJS.NodeJS.LTS</div>
-                                    <p class="text-[11px] text-gray-500 mt-1">→ Windows 내장 <strong>winget</strong>으로 설치됩니다. 설치가 끝나면 <strong>터미널을 닫았다 다시 열어야</strong> 인식됩니다. <span class="text-gray-400">(winget이 없거나 "관리자 권한 필요/차단" 메시지가 뜨면 사내 SW센터 또는 IT 담당에 문의)</span></p></div></li>
-                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">4</span><div><p class="text-xs text-gray-700"><strong>서버 실행 (명령 한 줄):</strong> <code class="bg-gray-100 px-1 rounded">npx serve</code> 입력 → Enter. 처음이면 "설치할까요(y)?"가 뜨는데 <strong>y</strong>를 누릅니다.</p></div></li>
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">3</span><div><p class="text-xs text-gray-700"><strong>Node.js 확인 (없으면 명령어로 설치):</strong> <code class="bg-gray-100 px-1 rounded">node -v</code> 입력 → 버전(예: v20.x)이 나오면 이미 있는 것. <strong>"인식되지 않는 명령"</strong>이 뜨면 아래 두 줄을 순서대로 입력합니다.</p>
+                                    <div class="mt-1.5 bg-gray-900 text-gray-100 rounded-md px-3 py-2 font-mono text-[11px] leading-relaxed">curl -o node.msi https://nodejs.org/dist/v20.17.0/node-v20.17.0-x64.msi<br>msiexec /i node.msi /quiet /norestart</div>
+                                    <p class="text-[11px] text-gray-500 mt-1">→ Windows 기본 내장 <strong>curl</strong>로 설치 파일을 받아 조용히 설치합니다(관리자 권한·winget 불필요). 설치 후 <strong>터미널을 닫았다 다시 열어야</strong> 인식됩니다. <span class="text-gray-400">(사내망이 nodejs.org를 막아 다운로드가 안 되면 IT 담당에 문의)</span></p></div></li>
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">4</span><div><p class="text-xs text-gray-700"><strong>서버 실행 (명령 한 줄):</strong> <code class="bg-gray-100 px-1 rounded">npx serve</code> 입력 → Enter. 처음이면 "설치할까요(y)?"가 뜨는데 <strong>y</strong>를 누릅니다.</p>
+                                    <p class="text-[11px] text-gray-500 mt-1"><strong>ENOENT / npm 폴더 오류</strong>가 뜨면 <code class="bg-gray-100 px-1 rounded">mkdir "%AppData%\npm"</code> 입력 후 <code class="bg-gray-100 px-1 rounded">npx serve</code>를 다시 실행하세요. (Node를 새로 설치하면 흔히 발생 — npm 폴더가 아직 없어서 나는 오류)</p>
+                                    <p class="text-[11px] text-gray-500 mt-1"><strong>포트를 직접 지정</strong>하려면 <code class="bg-gray-100 px-1 rounded">npx serve -l 4000</code> 처럼 <code class="bg-gray-100 px-1 rounded">-l 포트번호</code>를 붙입니다.</p></div></li>
                                 <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">5</span><div><p class="text-xs text-gray-700"><strong>주소 확인:</strong> 실행되면 터미널에 <code class="bg-gray-100 px-1 rounded">Local: http://localhost:3000</code>과 <code class="bg-gray-100 px-1 rounded">Network: http://10.x.x.x:3000</code>이 표시됩니다. <strong>Network 주소</strong>가 동료에게 공유할 링크입니다. <span class="text-red-600 font-semibold">(이 명령창을 닫으면 서버도 꺼집니다)</span></p></div></li>
                             </ol>
                         </div>
