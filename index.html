@@ -2664,14 +2664,14 @@
                 2. 중앙: 제품 카테고리별 평균 NPS 점수 막대 차트 (가장 낮은 제품은 빨간색으로 시각적 강조)
                 3. 하단: 주차별(19주차~25주차) 접수건수 추이를 보여주는 꺾은선 그래프
 
-                ■ 디자인 및 라이브러리:
-                - Tailwind CSS와 Chart.js를 CDN으로 불러와서 사용해 줘.
+                ■ 디자인 및 구현 방식:
+                - 스타일과 차트를 모두 순수 HTML·CSS·JavaScript로 직접 구현해 줘. 차트는 SVG로 그려 줘.
                 - 배경: 깔끔한 흰색/회색(#F3F4F6) 톤, 포인트 컬러: LG 레드(#C10933)
-                - 반응형 레이아웃, 카드 컴포넌트에 그림자(shadow-sm) 적용
-                - 마우스 오버 시 차트에 상세 수치가 툴팁으로 표시되도록 설정
+                - 반응형 레이아웃, 카드 컴포넌트에 은은한 그림자 적용
+                - 막대·꺾은선 위에 마우스를 올리면 상세 수치가 말풍선(툴팁)으로 표시되도록 해 줘
 
                 ■ 결과물:
-                - `<!DOCTYPE html>`로 시작해서 `</html>`로 끝나는 단일 HTML 전체 코드를 출력해 줘. CSS와 JS는 모두 내장해 줘."
+                - `&lt;!DOCTYPE html&gt;`로 시작해서 `&lt;/html&gt;`로 끝나는, 파일 하나로 완결되는 단일 HTML 전체 코드를 출력해 줘. (CSS·JavaScript·데이터 모두 파일 안에 내장)"
             </div>
 
             <h3 class="font-bold text-xl mb-4 mt-10"><i class="fas fa-play-circle mr-2 text-green-600"></i>시연 가이드: 회의에서
@@ -2959,7 +2959,7 @@
                                 <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">2</span><div><p class="text-xs text-gray-700"><strong>그 폴더에서 터미널 열기:</strong> 파일 탐색기에서 폴더를 연 뒤, 주소창에 <code class="bg-gray-100 px-1 rounded">cmd</code>를 입력하고 Enter → 그 폴더 위치에서 명령창이 열립니다. <span class="text-gray-400">(또는 명령창에서 <code class="bg-gray-100 px-1 rounded">cd 폴더경로</code>로 이동)</span></p></div></li>
                                 <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">3</span><div><p class="text-xs text-gray-700"><strong>Node.js 확인 (없으면 명령어로 설치):</strong> <code class="bg-gray-100 px-1 rounded">node -v</code> 입력 → 버전(예: v20.x)이 나오면 이미 있는 것. <strong>"인식되지 않는 명령"</strong>이 뜨면 아래 두 줄을 순서대로 입력합니다.</p>
                                     <div class="mt-1.5 bg-gray-900 text-gray-100 rounded-md px-3 py-2 font-mono text-[11px] leading-relaxed">curl -o node.msi https://nodejs.org/dist/v20.17.0/node-v20.17.0-x64.msi<br>msiexec /i node.msi /quiet /norestart</div>
-                                    <p class="text-[11px] text-gray-500 mt-1">→ Windows 기본 내장 <strong>curl</strong>로 설치 파일을 받아 조용히 설치합니다(관리자 권한·winget 불필요). 설치 후 <strong>터미널을 닫았다 다시 열어야</strong> 인식됩니다. <span class="text-gray-400">(사내망이 nodejs.org를 막아 다운로드가 안 되면 IT 담당에 문의)</span></p></div></li>
+                                    <p class="text-[11px] text-gray-500 mt-1">→ Windows 기본 내장 <strong>curl</strong>로 설치 파일을 받아 조용히 설치합니다(관리자 권한·winget 불필요). 설치 후 <strong>터미널을 닫았다 다시 열어야</strong> 인식됩니다. </p></div></li>
                                 <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">4</span><div><p class="text-xs text-gray-700"><strong>서버 실행 (명령 한 줄):</strong> <code class="bg-gray-100 px-1 rounded">npx serve</code> 입력 → Enter. 처음이면 "설치할까요(y)?"가 뜨는데 <strong>y</strong>를 누릅니다.</p>
                                     <p class="text-[11px] text-gray-500 mt-1"><strong>ENOENT / npm 폴더 오류</strong>가 뜨면 <code class="bg-gray-100 px-1 rounded">mkdir "%AppData%\npm"</code> 입력 후 <code class="bg-gray-100 px-1 rounded">npx serve</code>를 다시 실행하세요. (Node를 새로 설치하면 흔히 발생 — npm 폴더가 아직 없어서 나는 오류)</p>
                                     <p class="text-[11px] text-gray-500 mt-1"><strong>포트를 직접 지정</strong>하려면 <code class="bg-gray-100 px-1 rounded">npx serve -l 4000</code> 처럼 <code class="bg-gray-100 px-1 rounded">-l 포트번호</code>를 붙입니다.</p></div></li>
@@ -3246,7 +3246,7 @@
                         첨부한 `주차별_CS_NPS_시각화.csv` 데이터로 한 페이지짜리 HTML 대시보드를 만들어줘.
 
                         [요구사항]
-                        1. 별도 설치·서버 없이 더블클릭으로 바로 열리는 단일 HTML 파일 (CDN 차트 라이브러리 사용)
+                        1. 별도 설치·서버 없이 더블클릭으로 바로 열리는 단일 HTML 파일 (순수 HTML/CSS/JS로만, 차트는 SVG로 직접 그려서)
                         2. 상단: 핵심 지표 카드 (평균 NPS, 최고/최저 주차)
                         3. 중앙: 주차별 NPS 추이 라인 차트
                         4. 깔끔한 업무용 디자인, 모바일에서도 깨지지 않게
