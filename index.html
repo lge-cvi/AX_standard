@@ -2330,7 +2330,7 @@
                           1. `제품별_NPS_수리현황.csv`를 기반으로 각 제품 카테고리별로 추천고객(9-10점) 비율과 비추천고객(0-6점) 비율을 계산해 순수 고객만족도지수(NPS = 추천% - 비추천%)를 도출해 줘.
                           2. `제품별_NPS_수리현황.csv`에서 NPS 점수가 가장 낮은 취약 제품 카테고리를 찾아내고, 해당 카테고리의 평균 수리 완료 소요 일수를 함께 계산해 줘.
                           3. `주차별_CS_NPS_시각화.csv` 파일의 만족도 점수 추이를 분석하여, 특정 주차에 만족도가 크게 흔들렸는지 트렌드를 요약해 줘.
-                          4. 두 분석 결과를 종합하여, 제품군별 수리 현황과 만족도 트렌드 상관관계를 정리한 비교 표(Table)를 만들고 CC&S 주간보고서 형태로 가독성 있게 정리해 줘."
+                          4. 두 분석 결과를 종합하여, 제품군별 수리 현황과 만족도 트렌드 상관관계를 정리한 비교 표(Table)를 만들고 보고서 형태로 가독성 있게 정리해 줘."
                       </div>
                 </div>
             </div>
@@ -2431,16 +2431,16 @@
                     개발 없이 나만의 AI 챗봇을 제작할 수 있습니다. 사내 문서, 가이드 URL 등을 학습시켜 자연어로 질문하면 답변하는 챗봇을 수 분 내에 완성할 수 있습니다.</p>
             </div>
 
-            <h3 class="font-bold text-xl mb-4 mt-8"><i class="fas fa-database mr-2 text-red-600"></i>실습 예시: CS 데이터마트 가이드 FAQ 챗봇 만들기</h3>
+            <h3 class="font-bold text-xl mb-4 mt-8"><i class="fas fa-graduation-cap mr-2 text-red-600"></i>실습 예시: 'AX 기초교육 정보 탐색' 챗봇 만들기</h3>
             <div class="p-4 bg-yellow-50 border border-yellow-300 rounded-xl mb-4 text-sm flex gap-3 items-start">
                 <i class="fas fa-circle-info text-yellow-600 mt-0.5 flex-shrink-0"></i>
-                <p class="text-yellow-900"><strong>주의:</strong> 이 챗봇은 데이터마트에 <strong>직접 연결되어 데이터를 조회하는 기능이 아닙니다.</strong> 가이드 문서·PDF를 업로드해 "어떻게 사용하는가"를 자연어로 안내하는 <strong>문서 기반 FAQ 봇</strong>입니다.</p>
+                <p class="text-yellow-900"><strong>주의:</strong> 이 챗봇은 별도 개발 없이, <strong>웹페이지(URL)를 지식 소스로 학습</strong>시켜 그 내용을 자연어로 안내하는 <strong>문서 기반 FAQ 봇</strong>입니다. 오늘은 <strong>2026년 6월에 진행한 「AX 기초 과정」 교육 페이지</strong>를 재료로 만들어 봅니다.</p>
             </div>
             <div class="p-5 bg-blue-50 border border-blue-200 rounded-xl mb-6 text-sm">
                 <p class="font-bold text-blue-900 mb-1">🎯 목표</p>
-                <p class="text-gray-700">CC&S전략팀에서 운영중인 <strong>CS 데이터마트 사용 가이드</strong>를 업로드해, 누구나 자연어로 "이 지표는 어떻게 보나요?" 같은 사용법 질문에 답하는 FAQ 챗봇을 만든다.</p>
-                <p class="text-xs text-gray-500 mt-2">가이드 출처: <a href="https://audp.bimatrix.co.kr/" target="_blank"
-                        class="text-blue-600 underline">audp.bimatrix.co.kr</a> (AUD 플랫폼 아카데미)</p>
+                <p class="text-gray-700"><strong>2026년 6월에 진행된 「AX 기초 과정」 교육 페이지</strong>를 통째로 학습시켜, <strong>"프롬프트 4요소가 뭐야?"</strong> 같은 질문을 던지면 해당 교육 내용을 기반으로 정보를 찾아 답해주는 챗봇을 만든다.</p>
+                <p class="text-xs text-gray-500 mt-2">학습 소스(URL): <a href="https://lge-cvi.github.io/AX_basic/" target="_blank"
+                        class="text-blue-600 underline">https://lge-cvi.github.io/AX_basic/</a> (LG 고객가치혁신부문 AX 기초 과정 · 2026.6월)</p>
             </div>
 
             <div class="p-6 bg-gray-50 rounded-lg mb-6">
@@ -2461,10 +2461,10 @@
                             <p class="font-bold text-gray-800">에이전트 이름 & 역할(시스템 프롬프트) 설정</p>
                             <div
                                 class="mt-2 p-3 bg-white border border-gray-200 rounded text-xs text-gray-700 font-mono">
-                                이름: CS 데이터마트 도우미<br>
-                                역할: 너는 LG전자 CS 데이터마트 전문 안내 챗봇이야. 사용자가 데이터 조회, 지표 해석, 화면 조작 방법을 물어보면 업로드된
-                                가이드
-                                문서를 기반으로 친절하고 정확하게 안내해줘. 모르는 내용은 솔직하게 모른다고 말하고, 가이드 문서를 참고하도록 안내해.
+                                이름: AX 기초교육 정보 탐색봇<br>
+                                역할: 너는 LG전자 고객가치혁신부문 'AX 기초 과정'(2026년 6월) 교육 페이지 내용을 탐색해 안내하는 챗봇이야. 사용자가 AI 개념, Copilot 사용법,
+                                프롬프트 작성법, 실습 방법 등을 물어보면 학습된 교육 페이지 내용을 근거로 쉽고 정확하게 설명해줘. 교육 페이지에 없는 내용은 지어내지 말고,
+                                "해당 내용은 교육 범위에 없다"고 솔직하게 안내해.
                             </div>
                         </div>
                     </div>
@@ -2474,10 +2474,11 @@
                         <div>
                             <p class="font-bold text-gray-800">지식 소스(Knowledge) 연결</p>
                             <ul class="text-xs text-gray-600 mt-1 space-y-1 list-disc pl-4">
-                                <li><strong>파일 업로드:</strong> AUD 플랫폼 가이드 PDF / 매뉴얼 문서 업로드</li>
-                                <li><strong>웹사이트 연결:</strong> <code
-                                        class="bg-gray-100 px-1 rounded">https://audp.bimatrix.co.kr/</code> URL 추가</li>
-                                <li>화면 구성 설명서, KPI 정의서, 지표 계산 공식 등 사내 문서 추가 업로드 가능</li>
+                                <li><strong>웹사이트 연결(핵심):</strong> <code
+                                        class="bg-gray-100 px-1 rounded">https://lge-cvi.github.io/AX_basic/</code> URL 추가 →
+                                    페이지 전체 내용이 지식으로 학습됨</li>
+                                <li class="text-gray-400">※ <strong>엔터프라이즈 라이선스</strong> 사용 시에는 PDF·문서 파일을 직접 업로드해 파일 기반으로도
+                                    챗봇을 구성할 수 있습니다.</li>
                             </ul>
                         </div>
                     </div>
@@ -2487,14 +2488,14 @@
                         <div>
                             <p class="font-bold text-gray-800">동작 테스트 (대화 예시로 확인)</p>
                             <div class="mt-2 grid grid-cols-2 gap-2">
-                                <div class="p-2 bg-white border rounded text-xs text-gray-700">💬 "월별 일별 컬럼 구성 방법은?"
+                                <div class="p-2 bg-white border rounded text-xs text-gray-700">💬 "좋은 프롬프트의 4요소가 뭐야?"
                                 </div>
-                                <div class="p-2 bg-white border rounded text-xs text-gray-700">💬 "파생항목은 어떻게 생성해?"
+                                <div class="p-2 bg-white border rounded text-xs text-gray-700">💬 "환각(Hallucination) 현상이 뭔지
+                                    쉽게 설명해줘."
                                 </div>
-                                <div class="p-2 bg-white border rounded text-xs text-gray-700">💬 "NPS를 계산하는 빅쿼리 함수
-                                    작성해줘."
+                                <div class="p-2 bg-white border rounded text-xs text-gray-700">💬 "대용량 문서 분석은 어떤 도구를 써야 해?"
                                 </div>
-                                <div class="p-2 bg-white border rounded text-xs text-gray-700">💬 "AUD 리포트는 어떻게 만들어?"
+                                <div class="p-2 bg-white border rounded text-xs text-gray-700">💬 "이메일 회신 초안은 어떻게 만들어?"
                                 </div>
                             </div>
                         </div>
@@ -2514,9 +2515,9 @@
                 <h4 class="font-bold text-amber-900 mb-2"><i class="fas fa-lightbulb mr-2 text-amber-500"></i>우리 팀 에이전트
                     아이디어</h4>
                 <div class="grid md:grid-cols-3 gap-3 text-xs text-gray-700">
-                    <div class="p-3 bg-white rounded border">📊 <strong>CS KPI 해설 봇</strong><br>지표 정의·계산식 즉시 조회</div>
-                    <div class="p-3 bg-white rounded border">🔧 <strong>수리 접수 안내 봇</strong><br>처리 절차·현황 자연어 조회</div>
-                    <div class="p-3 bg-white rounded border">📋 <strong>업무 매뉴얼 봇</strong><br>신입 온보딩 가이드 질의응답</div>
+                    <div class="p-3 bg-white rounded border">📚 <strong>사내 규정·가이드 봇</strong><br>규정 문서·URL 학습 → 자연어 질의응답</div>
+                    <div class="p-3 bg-white rounded border">🧭 <strong>신입 온보딩 봇</strong><br>업무 매뉴얼·교육자료 기반 안내</div>
+                    <div class="p-3 bg-white rounded border">📊 <strong>CS KPI 해설 봇</strong><br>지표 정의서 업로드 → 계산식 즉시 조회</div>
                 </div>
             </div>
         </section>
@@ -2960,10 +2961,10 @@
                                 <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">3</span><div><p class="text-xs text-gray-700"><strong>Node.js 확인 (없으면 명령어로 설치):</strong> <code class="bg-gray-100 px-1 rounded">node -v</code> 입력 → 버전(예: v20.x)이 나오면 이미 있는 것. <strong>"인식되지 않는 명령"</strong>이 뜨면 아래 두 줄을 순서대로 입력합니다.</p>
                                     <div class="mt-1.5 bg-gray-900 text-gray-100 rounded-md px-3 py-2 font-mono text-[11px] leading-relaxed">curl -o node.msi https://nodejs.org/dist/v20.17.0/node-v20.17.0-x64.msi<br>msiexec /i node.msi /quiet /norestart</div>
                                     <p class="text-[11px] text-gray-500 mt-1">→ Windows 기본 내장 <strong>curl</strong>로 설치 파일을 받아 조용히 설치합니다(관리자 권한·winget 불필요). 설치 후 <strong>터미널을 닫았다 다시 열어야</strong> 인식됩니다. </p></div></li>
-                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">4</span><div><p class="text-xs text-gray-700"><strong>서버 실행 (명령 한 줄):</strong> <code class="bg-gray-100 px-1 rounded">npx serve</code> 입력 → Enter. 처음이면 "설치할까요(y)?"가 뜨는데 <strong>y</strong>를 누릅니다.</p>
-                                    <p class="text-[11px] text-gray-500 mt-1"><strong>ENOENT / npm 폴더 오류</strong>가 뜨면 <code class="bg-gray-100 px-1 rounded">mkdir "%AppData%\npm"</code> 입력 후 <code class="bg-gray-100 px-1 rounded">npx serve</code>를 다시 실행하세요. (Node를 새로 설치하면 흔히 발생 — npm 폴더가 아직 없어서 나는 오류)</p>
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">4</span><div><p class="text-xs text-gray-700"><strong>npm 폴더 미리 만들기:</strong> Node.js를 새로 설치했다면 <code class="bg-gray-100 px-1 rounded">mkdir "%AppData%\npm"</code> 를 먼저 입력합니다. <span class="text-gray-400">(이 폴더가 없어서 나는 ENOENT 오류를 예방하는 것 — 대부분 처음엔 이 폴더가 없습니다. 이미 있다는 메시지가 나와도 무시하고 다음 단계로)</span></p></div></li>
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">5</span><div><p class="text-xs text-gray-700"><strong>서버 실행 (명령 한 줄):</strong> <code class="bg-gray-100 px-1 rounded">npx serve</code> 입력 → Enter. 처음이면 "설치할까요(y)?"가 뜨는데 <strong>y</strong>를 누릅니다.</p>
                                     <p class="text-[11px] text-gray-500 mt-1"><strong>포트를 직접 지정</strong>하려면 <code class="bg-gray-100 px-1 rounded">npx serve -l 4000</code> 처럼 <code class="bg-gray-100 px-1 rounded">-l 포트번호</code>를 붙입니다.</p></div></li>
-                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">5</span><div><p class="text-xs text-gray-700"><strong>주소 확인:</strong> 실행되면 터미널에 <code class="bg-gray-100 px-1 rounded">Local: http://localhost:3000</code>과 <code class="bg-gray-100 px-1 rounded">Network: http://10.x.x.x:3000</code>이 표시됩니다. <strong>Network 주소</strong>가 동료에게 공유할 링크입니다. <span class="text-red-600 font-semibold">(이 명령창을 닫으면 서버도 꺼집니다)</span></p></div></li>
+                                <li class="flex items-start gap-3"><span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style="background:var(--copilot-purple);">6</span><div><p class="text-xs text-gray-700"><strong>주소 확인:</strong> 실행되면 터미널에 <code class="bg-gray-100 px-1 rounded">Local: http://localhost:3000</code>과 <code class="bg-gray-100 px-1 rounded">Network: http://10.x.x.x:3000</code>이 표시됩니다. <strong>Network 주소</strong>가 동료에게 공유할 링크입니다. <span class="text-red-600 font-semibold">(이 명령창을 닫으면 서버도 꺼집니다)</span></p></div></li>
                             </ol>
                         </div>
 
