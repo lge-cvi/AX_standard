@@ -1209,7 +1209,7 @@
                     </ul>
                 </div>
                 <div class="p-4 bg-green-50 border border-green-200 rounded-xl">
-                    <p class="font-bold text-green-800 mb-2"><i class="fas fa-shield-halved mr-1"></i>사내 승인 AI (MS Copilot · LGE 내부 시스템)</p>
+                    <p class="font-bold text-green-800 mb-2"><i class="fas fa-shield-halved mr-1"></i>사내 승인 AI (MS Copilot · 엘지니)</p>
                     <ul class="list-disc pl-4 space-y-1 text-gray-700 text-xs">
                         <li><strong>동일한 GPT/Claude 두뇌</strong>를 사용하되, 사내 보안망 안에서 실행</li>
                         <li>아웃룩·캘린더·사내 데이터와 <strong>직접 연동</strong>되어 복사 없이 업무 처리</li>
@@ -1521,6 +1521,87 @@
             </div>
 
             <p class="text-xs text-center text-gray-400 mt-4 italic">※ 팁: 복잡한 질문엔 "천천히 단계별로 생각해 봐"라는 한 문장만 추가해도 답의 정확도가 눈에 띄게 올라갑니다.</p>
+
+            <!-- 핵심 정리 -->
+            <div class="mt-10 p-6 bg-red-50 border border-red-200 rounded-xl">
+                <h4 class="font-bold text-red-800 mb-2"><i class="fas fa-flag-checkered mr-2"></i>오늘 이 시간의 핵심</h4>
+                <p class="text-sm text-gray-700">
+                    <strong>한 번에 완벽한 프롬프트를 쓰는 건, 실제 업무에서는 한계가 있습니다.</strong>
+                    그래서 오늘 배운 건 완벽한 문장을 외우는 게 아니라 <strong>대화로 맞춰가는 과정</strong>이었습니다.
+                    첫 질문(4가지 재료) → 결과 확인 → "이렇게 바꿔줘" 반복. 이게 실무에서 가장 빠르고 정확한 방법입니다.
+                </p>
+            </div>
+
+            <!-- 예외: 한 번에 완벽하게 지시해야 하는 경우 -->
+            <div class="mt-8">
+                <h3 class="font-bold text-xl mb-3"><i class="fas fa-triangle-exclamation text-amber-500 mr-2"></i>
+                    예외: "대화"가 안 되는 작업도 있습니다</h3>
+                <p class="text-sm text-gray-600 mb-5">
+                    지금까지는 <strong>대화형 AI(채팅)</strong> 기준이었습니다. 하지만 <strong>동영상 생성, 딥리서치(Deep Research)</strong>처럼
+                    한 번 실행하면 몇 분~몇십 분이 걸리고, 중간에 말을 걸어 고칠 수 없는 작업도 있습니다.
+                    이런 작업은 "일단 던지고 대화로 고치기"가 아니라, <strong>실행 전에 프롬프트 자체를 최대한 완벽하게 만들어야</strong> 합니다.
+                </p>
+
+                <div class="p-5 bg-white border-2 border-red-200 rounded-xl mb-6">
+                    <p class="font-bold text-gray-800 mb-2"><i class="fas fa-wand-magic-sparkles text-red-600 mr-2"></i>
+                        해법: AI에게 "프롬프트를 만들어 달라"고 요청하기</p>
+                    <p class="text-sm text-gray-600">
+                        내가 직접 완벽한 프롬프트를 쓰는 게 아니라, <strong>대화형 AI(Copilot 등)에게 먼저 "이런 결과물을 만들고 싶은데,
+                        이걸 위한 프롬프트를 작성해 줘"라고 요청</strong>합니다. 받은 프롬프트를 다시 대화로 다듬은 뒤, 그 최종본을
+                        영상 생성 도구 등에 <strong>한 번에</strong> 입력하는 방식입니다.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-2 mt-4 text-xs">
+                        <span class="px-3 py-1.5 bg-gray-100 rounded-lg font-bold">① Copilot과 대화로 요구사항 정리</span>
+                        <span class="text-gray-400">→</span>
+                        <span class="px-3 py-1.5 bg-gray-100 rounded-lg font-bold">② "이걸 위한 프롬프트 써줘"</span>
+                        <span class="text-gray-400">→</span>
+                        <span class="px-3 py-1.5 bg-gray-100 rounded-lg font-bold">③ 받은 프롬프트를 대화로 수정</span>
+                        <span class="text-gray-400">→</span>
+                        <span class="px-3 py-1.5 bg-red-600 text-white rounded-lg font-bold">④ 영상 생성 도구에 한 번에 입력</span>
+                    </div>
+                </div>
+
+                <h4 class="font-bold text-gray-800 mb-3">예시: 동영상 생성 프롬프트 만들기</h4>
+                <p class="text-sm text-gray-600 mb-4">
+                    영상 생성 AI는 일반 채팅과 달리 <strong>조명, 카메라 움직임, 프레임(장면) 전환</strong> 같은 전문적인 조건을 알아야
+                    원하는 결과가 나옵니다. 이런 조건은 대부분의 사람이 모르기 때문에, <strong>AI에게 "영상 생성용 프롬프트를 만들어 줘"라고
+                    요청</strong>하면 이 조건들을 대신 채워 줍니다.
+                </p>
+
+                <p class="text-xs font-bold text-gray-500 mb-2">① 내가 Copilot에게 요청 (프롬프트를 만들어 달라는 요청)</p>
+                <div class="prompt-box mb-4">
+                    <span class="prompt-label">1단계 — 프롬프트 생성 요청</span>
+                    "우리 회사 신제품(무선 이어버드) 광고용 15초 영상을 만들려고 해. 영상 생성 AI에 넣을 프롬프트를 작성해 줘.
+                    조명, 카메라 움직임, 장면(프레임) 전환까지 구체적으로 포함해서, 전문가가 지시하는 수준으로 써줘.
+                    분위기는 깔끔하고 고급스럽게, 배경은 심플한 스튜디오로 해줘."
+                </div>
+
+                <p class="text-xs font-bold text-gray-500 mb-2">② AI가 만들어 준 프롬프트 (이런 조건들이 자동으로 채워집니다)</p>
+                <div class="prompt-box mb-4" style="border:2px solid #C10933;">
+                    <span class="prompt-label" style="background:#15803d;">AI가 생성한 영상 프롬프트</span>
+                    "심플한 화이트 스튜디오 배경. 무선 이어버드 제품이 검은색 원형 받침대 위에 놓여 있다.
+
+                    [조명] 위에서 비추는 소프트 라이트(softbox) + 좌측 하단에서 은은한 림 라이트(rim light)로 제품 윤곽을 강조. 그림자는 부드럽게.
+                    [카메라] 제품을 중심으로 360도 천천히 회전하는 슬로우 돌리(dolly) 샷으로 시작.
+                    [프레임 전환 1 → 2] 3초 지점에서 제품 표면 클로즈업으로 컷 전환 (매크로 렌즈 느낌).
+                    [프레임 전환 2 → 3] 8초 지점에서 사람이 이어버드를 착용하는 장면으로 부드럽게 디졸브(dissolve) 전환.
+                    [카메라 움직임] 마지막 장면은 착용한 인물을 뒤에서 앞으로 서서히 다가가는 푸시인(push-in) 샷.
+                    [톤/색감] 화이트·실버 톤 위주, 채도 낮은 고급스러운 색감. 전체적으로 미니멀하고 프리미엄한 느낌."
+                </div>
+
+                <p class="text-xs font-bold text-gray-500 mb-2">③ 이 프롬프트를 대화로 다듬기</p>
+                <div class="p-4 bg-gray-50 rounded-lg text-sm text-gray-700 mb-2">
+                    💬 <strong>"조명을 더 따뜻한 톤으로 바꿔줘"</strong> · <strong>"카메라 움직임을 더 빠르게"</strong> ·
+                    <strong>"마지막 장면 대신 로고가 나오는 걸로 바꿔줘"</strong> — 이렇게 몇 번 다듬어 최종본을 만든 뒤,
+                    그 완성된 프롬프트를 영상 생성 도구에 <strong>한 번에</strong> 입력합니다.
+                </div>
+
+                <div class="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg text-xs text-blue-800">
+                    <i class="fas fa-circle-info mr-1"></i> 같은 방법이 <strong>딥리서치(Deep Research)</strong>에도 그대로 적용됩니다.
+                    "이 주제로 심층 조사를 하고 싶은데, 어떤 조사 범위·출처·형식으로 요청해야 할지 프롬프트를 만들어 줘"라고
+                    먼저 물어본 뒤, 다듬은 프롬프트로 조사를 실행하면 훨씬 깊고 정확한 결과를 받을 수 있습니다.
+                </div>
+            </div>
         </section>
 
         <section id="security" class="content-section">
@@ -1936,6 +2017,8 @@
                     </div>
                 </div>
             </div>
+
+            <p class="text-2xs text-gray-400 mt-4 text-center">※ 접속이 느리거나 응답이 이상하면 메모리 이슈일 수 있으니, 브라우저를 완전히 종료하고 다시 실행해 보는 것을 추천합니다.</p>
         </section>
 
         <!-- 2-1. [실전 A to Z] Outlook 이메일 연동 (기존 이메일 관리 대체) -->
@@ -2079,7 +2162,7 @@
                 </div>
                 <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
                     <p class="font-bold text-amber-900 text-sm mb-1"><i class="fa-solid fa-arrows-rotate mr-1"></i> '자동'(모델 선택) 버튼이 안 보이나요?</p>
-                    <p class="text-xs text-gray-600">모델 선택은 계정·환경에 따라 제공되지 않을 수 있습니다. 이 경우 <strong>기본 모델 그대로</strong> 작성해도 문제없습니다. 잠시 후 다시 시도하거나 IT 담당 부서에 문의하세요.</p>
+                    <p class="text-xs text-gray-600">모델 선택은 계정·환경에 따라 제공되지 않을 수 있습니다. 이 경우 <strong>기본 모델 그대로</strong> 작성해도 문제없습니다.</p>
                 </div>
             </div>
 
